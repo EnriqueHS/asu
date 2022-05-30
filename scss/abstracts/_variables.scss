@@ -1,0 +1,73 @@
+
+/// @type List
+$default-font: 'Heebo', sans-serif !default;
+
+/// @type Color
+$primary-color: #000 !default;
+$secondary-color: #CCE47C !default;
+$third-color: #CA2118 !default;
+$dark-grey: #F4F4F4 !default;
+$light-red: #DD9696 !default;
+$blue: #105ABD !default;
+$grey: #D8D8D8 !default;
+$white: #ffffff !default;
+$black: #000 !default;
+
+/// @type Length
+$site-widths: (
+  'full-width': 100%,
+  'max-width': 1790px,
+) !default;
+
+$font-sizes: (
+  'h1': 5.75vw,
+  'h2': 3.9vw,
+  'h3': 3.13vw,
+  'h4': 2.6vw,
+  'h5': 2.1vw,
+  'h6': 24px,
+) !default;
+
+$font-sizes-tablet: (
+  'h1': 5.75vw,
+  'h2': 3.9vw,
+  'h3': 3.13vw,
+  'h4': 2.6vw,
+  'h5': 2.1vw,
+  'h6': 18px,
+) !default;
+
+$font-sizes-mobile: (
+  'h1': 32px,
+  'h2': 20px,
+  'h3': 18px,
+  'h4': 16px,
+  'h5': 16px,
+  'h6': 14px,
+  ) !default;
+
+$font-weights: (
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'demi': 600,
+  'bold': 700,
+) !default;
+
+
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$breakpoints: (
+'mobile-s': 400px,
+'mobile-v': 600px,
+'mobile-h': 750px,
+'tablet-m': 768px,
+'tablet-v': 900px,
+'tablet-h': 1050px,
+'desktop-s': 1150px,
+'desktop-m': 1280px,
+'desktop': 1440px,
+'desktop-l': 1680px,
+) !default;

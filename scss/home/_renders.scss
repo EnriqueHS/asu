@@ -1,0 +1,108 @@
+.home-renders {
+    position: relative;
+    @include responsive('desktop-m'){
+        height: 100%;
+    }
+    &__cont {
+        height: 100vh;
+        &.lined{
+            height: calc(100vh - 11vh);
+            @include responsive('desktop-m'){
+                height: 100%;
+            }
+            &.iframe{
+                height: calc(100vh - 11vh);
+
+                @include responsive('desktop-m'){
+                    height: calc(100vh - 11vh);
+                }
+            }
+        }
+        &.iframe{
+            height: 100vh;
+            &.lined{
+                height: calc(100vh - 11vh);
+            }
+        }
+    }
+
+    &__line {
+        width: 100%;
+        height: 11vh;
+        background: $third-color;
+
+        @include responsive('mobile-v'){
+            height: 6.2vw;
+        }
+    }
+
+    &__video {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: #000;
+        &.lined{
+            height: calc(100vh - 11vh);
+            @include responsive('desktop-m'){
+                height: 100%;
+                position: relative;
+            }
+
+            .video-wrapper,
+            .video-wrapper iframe {
+                height: calc(100vh - 11vh)!important;
+                max-height: calc(100vh - 11vh)!important;
+            }
+        }
+        video {
+            width: 100vw;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            
+            @include responsive('desktop-m'){
+                position: relative;
+                width: 100%;
+                height: auto;
+                transform: none;
+                min-height: auto;
+                min-width: 100%;
+                top: auto;
+                left: auto;
+                float: left;
+            }
+        }
+        iframe{
+            width: 100vw;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background:#000;
+            @include responsive('desktop-m'){
+                height: 106.5vw; 
+                min-width: 355.54vh; 
+            }
+        }
+        .frame-video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .vimeo-wrapper{
+            height: 100%;
+        }
+    }
+}

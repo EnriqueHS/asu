@@ -1,0 +1,24 @@
+.contact-form {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    background: $white;
+    opacity: 0;
+    z-index: -10;
+    transition: all 0.5s ease;
+    transform: translate(0, -50%);
+    overflow: hidden;
+
+    @include responsive ('desktop-m'){ 
+        height: 70.25vw;
+    }
+
+    @include responsive('tablet-h') {
+        height: 100vh;
+    }
+
+}
+

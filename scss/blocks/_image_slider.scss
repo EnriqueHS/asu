@@ -1,0 +1,140 @@
+.image_slider {
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+
+    .container {
+        width: 78.15vw;
+
+        @include responsive ('mobile-v'){
+            width: 100vw;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-top: 56%
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__title {
+        @include h2();
+        font-weight: 700;
+        margin-bottom: 1.2vw;
+    }
+
+    &__caption {
+        position: absolute;
+        right: 4.3vw;
+        bottom: -1px;
+        background: $white;
+        z-index: 2;
+        @include h5();
+        font-weight: 700;
+        height: 3.8vw;
+        padding-top: 1.5vw;
+        padding-left: 2.4vw;
+        padding-right: 2.4vw;
+
+        @include responsive ('mobile-h'){
+            display: flex;
+            align-items: center;
+        }
+
+        @include responsive ('mobile-v'){
+            bottom: -3px;
+            height: 4.3vw;
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -2vw;
+            //width: 0;
+            width: 2.5vw;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 3.8vw 2vw;
+            border-color: transparent transparent $white transparent;
+            content: '';
+        }
+    }
+
+    .slick-arrow {
+      width: 4.4275vw;
+      height: 3.8vw;
+      padding-top: 1.5vw;
+      background: $white;
+      position: absolute;
+      bottom: -1px;
+      right: -1px;
+      z-index: 2;
+      text-indent: 5000px;
+      transition: all 0.5s ease; 
+      @include responsive ('mobile-h'){
+        bottom: 0;
+      }
+
+      &:before {
+          position: absolute;
+          top: 1.5vw;
+          left: 0;
+          width: 4vw;
+          height: 2vw;
+          background-image: url(images/arrow.svg);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          content: '';
+          transition: all 0.5s ease;
+      }
+
+      &:hover {
+          &:before {
+            transition: all 0.5s ease;
+            transform: translate(20px, 0);
+
+            @include responsive ('mobile-v'){
+                pointer-events: none;
+                transform: translate(0, 0);
+            }
+          }
+      }
+
+      &.slick-prev {
+          width: 6.6275vw;
+          left: 0-1px;
+          right: auto;
+          transform: rotate(180deg);
+          background-position: top;
+          padding-top: 0;
+          padding-bottom: 1.5vw;
+          padding-left: 2.4vw;
+          background-position: top right;
+          background-size: calc(100% - 2.4vw);
+
+          &:before {
+            left: auto;
+            bottom: auto;
+            top: 0.5vw;
+            right: 0;
+          }
+      }
+    }
+}

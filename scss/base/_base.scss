@@ -1,0 +1,343 @@
+html {
+  box-sizing: border-box;
+  height: -webkit-fill-available;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  @include default-font();
+  font-size: 16px;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  &.fixed{
+    overflow: hidden;
+  }
+
+  &:before {
+      position: fixed;
+      top:0;
+      left:0;
+      height:100%;
+      width: 100%;
+      background-color: $blue;
+      background-image: url('images/hero-logo.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% auto;
+      content:'';
+      transform: translate3d(0,0%,0);
+      transition: transform 0.4s ease;
+      z-index: 9999999;
+  }
+
+  @include responsive('desktop-m') {
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul li {
+    list-style: none;
+  }
+
+  &.overflow--hidden {
+    overflow: hidden;
+
+  }
+
+  &.dom-loaded {
+    &:before {
+      transform: translate3d(0,110%,0);
+    }
+  }
+}
+
+section {
+ @include row();
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"],input[type="email"],input[type="search"], input[type="submit"], textarea, button {
+  @include default-font();
+  -webkit-appearance:none;
+  border-radius:0;
+}
+
+select {  @include default-font();}
+
+h1,.h1,.h1 p {@include h1;}
+h2,.h2,.h2 p {@include h2;}
+h3,.h3,.h3 p {@include h3;}
+h4,.h4,.h4 p {@include h4;}
+h5,.h5,.h5 p {@include h5;}
+h6,.h6,.h6 p {@include h6;}
+
+a {color: $secondary-color; transition: all 0.3s ease;}
+
+
+b,
+strong,
+strong * {
+  font-weight: 600;
+}
+
+:hover {
+ // transition: all 0.3s ease;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+.row {
+  @include row();
+}
+
+
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.container {
+  width: map-get($site-widths, max-width);
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 30px;
+}
+
+.content--page{
+  .container{
+    @include responsive ('mobile-v'){
+      padding: 0;
+    }
+  }
+}
+
+.centerDiv {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.image-background {
+  @include image-background();
+}
+
+.iframe-wrapper {
+  @include row();
+  padding-top: 56.25%;
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.slick-arrow,
+.slick-dots button {
+  cursor: pointer;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px !important;
+
+  li {
+    list-style: none;
+    width: 15px;
+    height: 15px;
+
+    button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #D8D8D8;
+      overflow: hidden;
+      cursor: pointer;
+      text-indent: 500px;
+
+      &:hover {
+        background: $third-color;
+      }
+    }
+
+    &.slick-active {
+      button {
+        background: $third-color;
+      }
+    }
+  }
+}
+
+body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: $primary-color !important;
+
+  + .mCSB_draggerRail {opacity: 0;}
+}
+
+.cart-bar {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 100%;
+  padding: 10px 30px;
+  color: $white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-styles {
+  ul,
+  ol {
+    li {
+      list-style: disc;
+      margin-left: 25px;
+      margin-bottom: 15px;
+      width: calc(100% - 25px);
+      @include h6();
+      line-height: 1.4;
+
+      @include responsive ('desktop-m'){
+        font-size: 1.75vw;
+        line-height: 1.1;
+      }
+
+      @include responsive ('tablet-h'){
+        font-size: 2vw;
+      }
+      
+      @include responsive ('mobile-v'){
+        font-size:3vw;
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  p {
+    @include h6();
+    margin-bottom: 45px;
+    line-height: 36px;
+
+    @include responsive ('desktop-l'){
+      margin-bottom: 35px;
+      font-size: 1.45vw;
+    }
+
+    @include responsive ('desktop-m'){
+      font-size: 1.65vw;
+      margin-bottom: 30px;
+    }
+
+    @include responsive ('tablet-h'){ 
+      font-size: 1.78vw;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    
+    @include responsive ('tablet-m'){ 
+      margin-bottom: 15px;
+      line-height: 1.4;
+      font-size: 2.1vw;
+    }
+
+    @include responsive ('mobile-v'){
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+    
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.site {
+  @include row();
+  overflow: hidden;
+}
+
+.top-icon {
+  position: fixed;
+  right: 29px;
+  bottom: 19px;
+  width: 40px;
+  height: 60px;
+  background: none;
+  background-image: url(images/top-btn.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9;
+  
+  @include responsive ('mobile-v'){
+    display: none;
+  }
+  
+}
+
+.contact-icon {
+  position: fixed;
+  right: 19px;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  background: none;
+  background-image: url(images/contact.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9;
+  transform: translate(0,-50%);
+  cursor: pointer;
+
+  @include responsive ('mobile-v'){
+    top: auto;
+    width: 30px;
+    height: 30px;
+    bottom: 28px;
+  }
+}
