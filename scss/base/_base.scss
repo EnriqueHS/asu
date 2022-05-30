@@ -28,22 +28,6 @@ body {
     overflow: hidden;
   }
 
-  &:before {
-      position: fixed;
-      top:0;
-      left:0;
-      height:100%;
-      width: 100%;
-      background-color: $blue;
-      background-image: url('images/hero-logo.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 50% auto;
-      content:'';
-      transform: translate3d(0,0%,0);
-      transition: transform 0.4s ease;
-      z-index: 9999999;
-  }
 
   @include responsive('desktop-m') {
     font-size: 16px;
@@ -57,16 +41,6 @@ body {
     list-style: none;
   }
 
-  &.overflow--hidden {
-    overflow: hidden;
-
-  }
-
-  &.dom-loaded {
-    &:before {
-      transform: translate3d(0,110%,0);
-    }
-  }
 }
 
 section {
@@ -137,6 +111,7 @@ strong * {
 
 .content--page{
   .container{
+
     @include responsive ('mobile-v'){
       padding: 0;
     }
@@ -209,12 +184,6 @@ strong * {
       }
     }
   }
-}
-
-body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: $primary-color !important;
-
-  + .mCSB_draggerRail {opacity: 0;}
 }
 
 .cart-bar {

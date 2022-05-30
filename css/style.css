@@ -34,26 +34,6 @@ body {
 body.fixed {
   overflow: hidden;
 }
-body:before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #105ABD;
-  background-image: url("images/hero-logo.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% auto;
-  content: "";
-  -webkit-transform: translate3d(0, 0%, 0);
-          transform: translate3d(0, 0%, 0);
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-  z-index: 9999999;
-}
 @media only screen and (max-width: 1280px) {
   body {
     font-size: 16px;
@@ -65,13 +45,6 @@ body img {
 }
 body ul li {
   list-style: none;
-}
-body.overflow--hidden {
-  overflow: hidden;
-}
-body.dom-loaded:before {
-  -webkit-transform: translate3d(0, 110%, 0);
-          transform: translate3d(0, 110%, 0);
 }
 
 section {
@@ -313,13 +286,6 @@ strong * {
 }
 .slick-dots li.slick-active button {
   background: #CA2118;
-}
-
-body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #000 !important;
-}
-body .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar + .mCSB_draggerRail {
-  opacity: 0;
 }
 
 .cart-bar {
