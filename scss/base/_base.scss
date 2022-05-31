@@ -106,7 +106,21 @@ strong * {
   width: map-get($site-widths, max-width);
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 30px;
+  padding: 0 3vw;
+
+  @include responsive('tablet-h') {
+    padding: 0 64px;
+  }
+  @include responsive('mobile-v') {
+    padding: 0 32px;
+  }
+  @include responsive('mobile-s') {
+    padding: 0 16px;
+  }
+
+  &-sm {
+    padding: 0 1.5vw;
+  }
 }
 
 .content--page{
@@ -310,3 +324,4 @@ strong * {
     bottom: 28px;
   }
 }
+

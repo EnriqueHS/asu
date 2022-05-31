@@ -1,37 +1,88 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    float: left;
-    width: 100%;
-    padding: 0 5.2vw;
-    padding-top: 3.7vw;
-    z-index: 10;
+  border: 2px solid blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  //transition: all .3s ease;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(208, 208, 208);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
+
+  @include responsive("mobile-v") {
+    padding: 0 3.8vw;
+    padding-top: 2.5vw;
+  }
+
+  .universal__nav {
+		width: 100%;
+    padding: 0px 2rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all .3s ease;
-    //overflow-x: hidden;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    height: 24px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
 
-    @include responsive ('mobile-v'){
-        padding: 0 3.8vw;
-        padding-top: 2.5vw;
+		&__menu {
+			width: 100%;
+			max-width: 1224px;
+			display: flex;
+			flex-wrap: wrap;
+			-webkit-box-align: center;
+			align-items: center;
+			-webkit-box-pack: end;
+			justify-content: flex-end;
+
+			&> .login__status, a {
+				display: inline-flex;
+				font-size: 0.75rem;
+				padding: 0px 0.5rem;
+				color: rgb(72, 72, 72);
+				margin: 0px;
+				position: relative;
+			}
+		}
+  }
+  .site-logo {
+    @include responsive("mobile-v") {
+      max-width: 11.2vw;
     }
+  }
 
-    .site-logo{
-        
-        @include responsive ('mobile-v'){
-            max-width: 11.2vw;
-        }
-    }
+	.navbar {
+		background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1224px;
 
-}
+		&__container {
+			display: flex;
+    flex-direction: row;
+    width: 100%;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
+    position: relative;
+    align-items: flex-end;
+		}
 
-.scrolled {
-    .header {
-        background-color: rgba(255,255,255,0.8);
-        box-shadow: rgb(0 0 0 / 30%) 0 5px 10px;
-        padding-top: 1.3vw;
-        padding-bottom: 1vw;
-    }
+		&__logo {
+			img {
+				display: block;
+				height: 72px;
+				width: auto;
+				margin: 1.5rem 1rem 1.5rem 0px;
+			}
+		}
+		
+	}
 }

@@ -13,12 +13,12 @@
 @import
   'components/_button',
   'components/_forms',
-  'components/_menu-responsive',
   'components/_posts';
 
 // Header
   @import
     'header/_header',
+    'header/_menu-responsive',
     'header/_menu';
 
 // Footer
