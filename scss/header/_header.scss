@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 100%;
+    padding: 0 5.2vw;
+    padding-top: 3.7vw;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease;
+    //overflow-x: hidden;
+
+    @include responsive ('mobile-v'){
+        padding: 0 3.8vw;
+        padding-top: 2.5vw;
+    }
+
+    .site-logo{
+        
+        @include responsive ('mobile-v'){
+            max-width: 11.2vw;
+        }
+    }
+
+}
+
+.scrolled {
+    .header {
+        background-color: rgba(255,255,255,0.8);
+        box-shadow: rgb(0 0 0 / 30%) 0 5px 10px;
+        padding-top: 1.3vw;
+        padding-bottom: 1vw;
+    }
+}

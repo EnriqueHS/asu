@@ -1,0 +1,15 @@
+.available-footer {
+    min-height: 53.15vw;
+    position: relative;
+    margin-top: -1px;
+    overflow: hidden;
+
+    @include responsive ('tablet-h'){
+        min-height: 56.15vw;
+    }
+    
+    @include responsive ('mobile-v'){
+        min-height: 72vw;
+    }
+
+}

@@ -4,7 +4,7 @@
   'abstracts/_variables',
   'abstracts/_mixins';
 
-// Base stuff
+// Base
 @import
   'base/_typography',
   'base/_base';
@@ -13,16 +13,17 @@
 @import
   'components/_button',
   'components/_forms',
+  'components/_menu-responsive',
   'components/_posts';
 
 // Header
   @import
-    'header/_base',
+    'header/_header',
     'header/_menu';
 
 // Footer
   @import
-    'footer/_base';
+    'footer/_footer';
 
 // Home
   @import
