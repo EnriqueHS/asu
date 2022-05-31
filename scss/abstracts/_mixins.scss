@@ -193,34 +193,41 @@
 }
 
 @mixin button() {
-  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid rgb(140, 29, 64);
+  line-height: 1rem;
+  border-radius: 400rem;
+  transition: all 0.03s ease-in-out 0s;
+  font-size: 0.875rem;
+  background-color: rgb(140, 29, 64);
+  padding: 0.5rem 1rem !important;
+  color: $white;
+  cursor: pointer;
+  /* font-size: 16px;
   line-height: 1;
   color: $secondary-color;
   border: 1px solid $secondary-color;
   text-transform: uppercase;
-  /* font-family:'Source Sans Pro'; */
+  //font-family:'Source Sans Pro';
   font-weight: 400;
   cursor: pointer;
   padding: 8px 15px;
   transition: all .3s ease;
-  text-align: center; 
+  text-align: center;  */
 
-  &--dark {
-    background-color:rgba(0, 0, 0, 0.3);
+  &--secondary {
+    background-color:$primary-color;
     color:$white;
     border: none;
-
-    &:hover {
-      border: 1px solid $white;
-    }
-  }
-  &--light{
-    color:$white;
   }
 
-  &:hover{
-    color:$white;
-    /* background-color:red; */
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
