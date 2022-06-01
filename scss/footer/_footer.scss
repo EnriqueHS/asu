@@ -1,4 +1,5 @@
 .footer {
+	width: 100%;
   .animation {
     height: 650px;
     background-color: #f3f3f3; //TODO: delete
@@ -31,6 +32,22 @@
       z-index: 1;
       display: flex;
 
+			@include responsive ('desktop-m') {
+				left: 15%;
+        right: 15%;
+			}
+
+			@include responsive ('tablet-h') {
+				left: 5%;
+				right: 5%;
+			}
+
+			@include responsive ('mobile-v') {
+				flex-direction: column;
+			}
+
+
+
       .box__left {
         position: relative;
         width: 100%;
@@ -39,6 +56,10 @@
         //width: 321px;
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%;
+
+				@include responsive ('mobile-v') {
+					max-width: 100%;
+				}
 
         h3 {
           font-size: 1.5rem;
@@ -67,4 +88,45 @@
       }
     }
   }
+
+
+	//sub footer
+	.sub__footer {
+    background-color: $yellow;
+		//height: 100px;
+  	width: 100%;
+
+		.container {
+			width: 100%;
+			padding-right: 12px;
+			padding-left: 12px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+
+		.image__cont {
+			max-width: 457px;
+			max-height: 100px;
+		}
+
+		.sub__footer__menu {
+			justify-content: space-between;
+			align-items: center;
+		
+			display: flex;
+
+			.nav-link {
+				font-weight: 700;
+			}
+		}
+	}
+	
+
+	
+
+
+
+
+
 }

@@ -23,9 +23,7 @@ body {
   font-size: 16px;
   min-height: 100vh;
   /* mobile viewport bug fix */
-  min-height: -webkit-fill-available; //TODO: Lucas...
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  min-height: -webkit-fill-available;
   &.fixed{
     overflow: hidden;
   }
@@ -327,5 +325,16 @@ strong * {
     height: 30px;
     bottom: 28px;
   }
+}
+
+.container__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
