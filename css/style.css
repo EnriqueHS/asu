@@ -511,6 +511,33 @@ strong * {
   color: #ffffff;
   border: none;
 }
+.button--red,
+.woocommerce .button--red,
+.woocommerce a.button--red {
+  display: inline-block;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 1rem 2rem !important;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 400rem;
+  -webkit-transition: 0.03s ease-in-out;
+  transition: 0.03s ease-in-out;
+  background-color: #8C1D40;
+}
+.button--red:hover,
+.woocommerce .button--red:hover,
+.woocommerce a.button--red:hover {
+  border-color: #0062cc;
+}
 .button:hover,
 .woocommerce .button:hover,
 .woocommerce a.button:hover {
@@ -1008,6 +1035,20 @@ strong * {
             align-items: center;
   }
 }
+.header .navbar__container__right .navbar__primary .navbar__menu__item::after {
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
+  content: "";
+  display: block;
+  height: 0.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5%, transparent), color-stop(0.5%, rgb(255, 198, 39)));
+  background-image: linear-gradient(to right, transparent 0.5%, rgb(255, 198, 39) 0.5%);
+  position: relative;
+  bottom: 0px;
+  width: 0px;
+  margin-left: 0px;
+  top: 0.5rem;
+}
 .header .navbar__container__right .navbar__primary .navbar__menu .home__responsive {
   display: none;
 }
@@ -1116,27 +1157,64 @@ strong * {
   height: 650px;
   background-color: #f3f3f3;
   width: 100%;
-}
-.footer .container {
   position: relative;
+  /* 	display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 .footer .container .box__signup {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
+  /* background: $white;
+     padding: 50px 25px;
+     box-shadow: 5px 10px 18px #888888;
+     z-index: 1;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  width: 600px;
+  align-items: flex-start; */
   position: absolute;
   left: 30%;
   right: 30%;
   top: 25%;
   bottom: 25%;
-  background: #FFF;
+  background: #fff;
   padding: 50px 25px;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .container .box__signup .box__left {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.3333333333%;
+          flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+.footer .container .box__signup .box__left h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.0525rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-align: left;
+}
+.footer .container .box__signup .box__left p {
+  margin-bottom: 1rem;
+}
+.footer .container .box__signup .social__cont {
+  margin-bottom: 1rem;
+}
+.footer .container .box__signup .box__right {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .home-hero {

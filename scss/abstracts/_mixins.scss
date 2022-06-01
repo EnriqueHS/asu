@@ -226,10 +226,35 @@
     border: none;
   }
 
+  &--red {
+    display: inline-block;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 1rem 2rem !important;
+    font-size: 1rem;
+    line-height: 1rem;
+    border-radius: 400rem;
+    transition: .03s ease-in-out;
+   
+    background-color: $third-color;
+
+    &:hover {
+      border-color: #0062cc;
+    }
+    
+  }
+
   &:hover {
     transform: scale(1.05);
   }
 }
+
+
 
 @mixin icon-title {
   display: flex;
