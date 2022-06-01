@@ -23,7 +23,9 @@ body {
   font-size: 16px;
   min-height: 100vh;
   /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  min-height: -webkit-fill-available; //TODO: Lucas...
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   &.fixed{
     overflow: hidden;
   }
@@ -103,7 +105,11 @@ strong * {
 }
 
 .container {
-  width: map-get($site-widths, max-width);
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.container-sm {
   margin: 0 auto;
   max-width: 100%;
   padding: 0 3vw;
@@ -117,11 +123,8 @@ strong * {
   @include responsive('mobile-s') {
     padding: 0 16px;
   }
-
-  &-sm {
-    padding: 0 1.5vw;
-  }
 }
+
 
 .content--page{
   .container{

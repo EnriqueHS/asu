@@ -77,6 +77,10 @@
 		margin-left: auto;
 		max-width: 1224px;
 
+		@include responsive ('tablet-h') {
+			padding: 0;
+		}
+
 		&__container__left {
 			display: flex;
 			flex-direction: row;
@@ -87,12 +91,30 @@
 		}
 
 		&__logo {
+
+		
 			img {
 				display: block;
 				height: 72px;
 				width: auto;
 				margin: 1.5rem 1rem 1.5rem 0px;
+
+				@include responsive ('tablet-h') {
+					display: none;
+				}
 			}
+		}
+
+		.navbar__logo--large {
+			display: none;
+
+			@include responsive ('tablet-h') {
+				display: block;
+				height: 32px;
+				width: auto;
+				margin: 0 0 1rem 2rem;
+			}
+			
 		}
 
 		&__container__right {
@@ -105,16 +127,35 @@
 				font-size: 2rem;
 				margin: 1rem 0px;
 				font-weight: 700;
+
+				@include responsive ('tablet-h') {
+					line-height: 1;
+					font-size: 1rem;
+					font-weight: 700;
+					margin: 0px 2rem 1.5rem;
+					letter-spacing: -1px;
+					background-image: linear-gradient(to right, transparent 51%, rgb(255, 198, 38) 51%, 95%, transparent);
+					background-position: 0px 0px;
+					background-size: 200%;
+					display: inline-block;
+					transition: all 1s cubic-bezier(0.19, 1, 0.19, 1) 0s;
+				}
 			}
 
 			.navbar__primary {
 				width: 100%;
 				display: flex;
 				flex-direction: row;
-				-webkit-box-pack: justify;
 				justify-content: space-between;
 				padding: 0px;
 				margin: 0px;
+
+				@include responsive ('tablet-h') {
+					display: none;
+					position: absolute;
+					top: 10vw;
+					left: 0;
+				}
 
 				.navbar__menu {
 					list-style: none;
@@ -123,16 +164,29 @@
           padding: 0px;
           align-items: flex-end;
 
+					@include responsive ('tablet-h') {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+
 					&__item {
 						position: relative;
 						line-height: 1rem;
 						display: block;
-            -webkit-box-align: center;
             align-items: center;
             padding: 0.5rem 0.75rem;
             color: $secondary-color;
 						margin-right: 0.5rem;
 						text-transform: capitalize;
+
+						@include responsive ('tablet-h') {
+							width: 100%;
+							padding: 1rem 2rem 0.5rem;
+							justify-content: space-between;
+							display: block;
+							border-top: 1px solid rgb(204, 204, 204);
+							align-items: center;
+						}
 					}
 
 
@@ -146,6 +200,13 @@
 
 					.dropdown__item {
 						display: none;
+					}
+
+					.icon__container {
+
+						@include responsive ('tablet-h') {
+							display: none;
+						}
 					}
 				}
 			}

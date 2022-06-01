@@ -1,15 +1,25 @@
-.available-footer {
-    min-height: 53.15vw;
-    position: relative;
-    margin-top: -1px;
-    overflow: hidden;
-
-    @include responsive ('tablet-h'){
-        min-height: 56.15vw;
+.footer {
+  
+    .animation {
+        height: 650px;
+        background-color: #f3f3f3;//TODO: delete
+        width: 100%;
     }
-    
-    @include responsive ('mobile-v'){
-        min-height: 72vw;
+
+    .container {
+        position: relative;
+        .box__signup {
+            @include centerDiv();
+            position: absolute;
+            left: 30%;
+            right: 30%;
+            top: 25%;
+            bottom: 25%;
+            background: #FFF;
+            padding: 50px 25px;
+            box-shadow: 5px 10px 18px #888888;
+            z-index: 1;
+        }
     }
 
 }

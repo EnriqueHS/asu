@@ -5,8 +5,8 @@
   right: 2vw;
   bottom: 0;
   margin: auto;
-  width: 40px;
-  height: 60px;
+  width: 17px;
+  height: 55px;
   cursor: pointer;
   z-index: 50;
 }
@@ -14,15 +14,15 @@
 .bar,
 .bar:after,
 .bar:before {
-  width: 40px;
-  height: 5px;
+  width: 17px;
+  height: 3px;
   border-radius: 5px;
 }
 
 .bar {
   position: relative;
   transform: translateY(25px);
-  background: $primary-color;
+  background: $secondary-color;
   transition: all 0ms 300ms;
 }
 
@@ -31,8 +31,8 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 10px;
-  background: $primary-color;
+  bottom: 6px;
+  background: $secondary-color;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -40,8 +40,8 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
-  background: $primary-color;
+  top: 6px;
+  background: $secondary-color;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
