@@ -153,8 +153,10 @@
 				@include responsive ('tablet-h') {
 					display: none;
 					position: absolute;
-					top: 10vw;
+					top: 8vw;
 					left: 0;
+					background-color: $white;
+					z-index: 100;
 				}
 
 				.navbar__menu {
@@ -189,6 +191,17 @@
 						}
 					}
 
+					
+
+					&__item:hover .dropdown__item--one {	
+						display: block;
+					}
+
+					&__item:hover .dropdown__item--two {
+						display: block;
+					}
+
+
 					&__item::after {
 						transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
 						content: "";
@@ -202,8 +215,41 @@
 						top: 0.5rem;
 					}
 
-				
+					.menu__sub {
+						position: absolute;
+						top: 2.5vw;
+						left: 0;
+						display: flex;
+						-webkit-box-pack: justify;
+						justify-content: space-between;
+						background: rgb(255, 255, 255);
+						border: 1px solid rgb(208, 208, 208);
+						opacity: 1;
+						//visibility: hidden;
+						z-index: 100;
+						flex-flow: column nowrap;
+						transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
+						overflow: hidden;
+						padding: 2rem;
+						display: flex;
+						margin: 0px auto;
+						-webkit-box-pack: center;
+						justify-content: center;
+						min-width: 16rem;
+						//margin: 0.3px 0px 0px;
 
+						@include responsive ('tablet-h') {
+							width: 100%;
+						}
+					}
+					.navlink > a.nav__link {
+						padding: 0.5rem 0px;
+					}
+
+					.navlink > a.nav__link:hover {
+						color: rgb(140, 29, 64);
+    				text-decoration: underline;
+					}
 
 					.home__responsive {
 						display: none;

@@ -91,42 +91,124 @@
 
 
 	//sub footer
+	
 	.sub__footer {
     background-color: $yellow;
 		//height: 100px;
   	width: 100%;
 
-		.container {
-			width: 100%;
-			padding-right: 12px;
-			padding-left: 12px;
-			margin-right: auto;
-			margin-left: auto;
-		}
+		.sub__footer__top {
+			.container {
+				width: 100%;
+				padding-right: 12px;
+				padding-left: 12px;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 1224px;
 
+				@include responsive ('tablet-h') {
+					max-width: 992px;
+					padding-left: 2rem;
+    			padding-right: 2rem;
+				}
+	
+				.sub__footer__menu {
+					justify-content: space-between;
+					align-items: center;
+					flex-direction: row-reverse;
+					display: flex;
+					width: 100%;
 
-		.image__cont {
-			max-width: 457px;
-			max-height: 100px;
-		}
-
-		.sub__footer__menu {
-			justify-content: space-between;
-			align-items: center;
+					@include responsive ('tablet-h') {
+						flex-direction: column-reverse;
+						padding: 0.5rem 0;
+						max-width: 768px;
+						margin: 0 auto;
+					}
 		
-			display: flex;
+					.nav-link {
+						font-weight: 700;
+						margin-right: 1.5rem;
 
-			.nav-link {
-				font-weight: 700;
+						@include responsive ('tablet-h') {
+							margin-right: 0;
+							padding: 0.5rem 0;
+						}
+					}
+					
+					
+				}
+			}
+	
+			.image__cont {
+				max-width: 457px;
+				max-height: 100px;
+
+				@include responsive ('tablet-h') {
+					max-width: 699px;
+					margin-bottom: 50px;
+				}
 			}
 		}
+
+		.sub__footer__down {
+			background-color: $grey;
+
+			.container {
+				width: 100%;
+				padding-right: 12px;
+				padding-left: 12px;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 1224px;
+
+				@include responsive ('tablet-h') {
+					max-width: 992px;
+					padding-left: 2rem;
+          padding-right: 2rem;
+				}
+
+				.sub__footer__legal__links {
+					margin: 1rem 0;
+
+					@include responsive ('tablet-h') {
+						padding: 0.5rem 0;
+						max-width: 768px;
+						margin: 1rem auto;
+						width: 100%;
+					}
+
+					.nav-link {
+						font-weight: 400;
+						margin-right: 1.5rem;
+
+						@include responsive ('tablet-h') {
+							margin-right: 0;
+              padding: 0.5rem 0;
+						}
+					}
+				}
+				
+			}
+		}
+
+		.sub__footer__item {
+
+			@include responsive ('tablet-h') {
+				display: grid;
+				grid-template-rows: 1fr 1fr 1fr;
+				grid-auto-flow: column;
+				justify-items: start;
+				width: 100%;
+			}
+		}
+		
+		.nav-link:nth-child(n+4){
+			@include responsive ('tablet-h') {
+				justify-self: end;
+			}
+		}
+
 	}
-	
-
-	
-
-
-
-
 
 }
