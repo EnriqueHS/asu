@@ -1633,7 +1633,7 @@ strong * {
 }
 
 .hero {
-  background-image: url(/images/example/about-banner.jpg);
+  background-image: url(../images/example/about-banner.jpg);
   min-height: 31vw;
 }
 .hero--content {
