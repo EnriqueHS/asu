@@ -47,11 +47,9 @@ body ul li {
   list-style: none;
 }
 
-section {
-  float: left;
-  width: 100%;
-}
-
+/* section {
+ @include row();
+} */
 .hidden {
   display: none;
 }
@@ -604,6 +602,37 @@ strong * {
   background-size: cover;
   position: relative;
   z-index: 10;
+  min-height: 31vw;
+}
+.hero--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 3;
+}
+.hero--content .title {
+  font-size: 5.75vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000;
+}
+@media only screen and (max-width: 1050px) {
+  .hero--content .title {
+    font-size: 5.75vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero--content .title {
+    font-size: 32px;
+  }
 }
 .hero img {
   display: none;
@@ -619,6 +648,25 @@ strong * {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.79)));
   background-image: linear-gradient(180deg, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0.79));
   z-index: -1;
+}
+
+.url__navigator ul {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.url__navigator ul li {
+  display: inline;
+  padding-right: 10px;
+}
+.url__navigator ul li a {
+  font-size: 16px;
+  text-decoration: underline;
+}
+.url__navigator ul li::after {
+  display: inline-block;
+  padding-left: 10px;
+  content: "/";
 }
 
 .archive-page .archive__cont {
@@ -1464,6 +1512,10 @@ strong * {
   }
 }
 
+#home-hero {
+  padding: 50px 0;
+}
+
 .image_slider {
   margin-top: 4vw;
   margin-bottom: 6vw;
@@ -1632,58 +1684,8 @@ strong * {
   right: 0;
 }
 
-.hero {
+#about-hero {
   background-image: url(../images/example/about-banner.jpg);
-  min-height: 31vw;
-}
-.hero--content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  z-index: 3;
-}
-.hero--content .title {
-  font-size: 5.75vw;
-  font-family: "Arial", sans-serif;
-  line-height: 1.1;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #000;
-}
-@media only screen and (max-width: 1050px) {
-  .hero--content .title {
-    font-size: 5.75vw;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .hero--content .title {
-    font-size: 32px;
-  }
-}
-
-.url__navigator ul {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px 0;
-}
-.url__navigator ul li {
-  display: inline;
-  padding-right: 10px;
-}
-.url__navigator ul li a {
-  font-size: 16px;
-  text-decoration: underline;
-}
-.url__navigator ul li::after {
-  display: inline-block;
-  padding-left: 10px;
-  content: "/";
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1809,5 +1811,74 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+main {
+  margin-bottom: 3vw;
+}
+main .unequal__history {
+  background: url(../images/example/about-man-on-street.jpg) no-repeat center center/cover;
+  height: 29vw;
+  padding: 57px 75px;
+}
+main .unequal__history img {
+  display: none;
+}
+main .unequal__history h3 {
+  max-width: 45%;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+}
+main .unequal__history p {
+  color: #ffffff;
+  font-weight: 700;
+}
+main .content__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .content__block .left__content {
+  width: 50%;
+  padding: 40px 0;
+  padding-right: 20px;
+}
+main .content__block .right__content {
+  width: 50%;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+main .content__block .right__content p {
+  font-size: 18px;
+}
+main .content__block .right__content a {
+  color: #8C1D40;
+}
+main .title__video {
+  float: left;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 700;
+}
+main .content__block__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 1fr;
+  grid-template-columns: 70% 1fr;
+}
+main .content__block__grid .right__content {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#team-hero {
+  background-image: url(../images/example/our-people-banner.jpg);
 }
 /*# sourceMappingURL=style.css.map */

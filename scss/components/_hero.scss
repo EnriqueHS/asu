@@ -1,23 +1,40 @@
 .hero {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    z-index: 10;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	z-index: 10;
+	min-height: 31vw;
 
-    img {
-        display: none;
-    }
+	&--content {
+		@extend .container-sm;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		z-index: 3;
 
+		.title {
+			@include h1();
+			font-weight: 700;
+			color: $white;
+			background-color: $black;
+		}
+	}
+
+	img {
+		display: none;
+	}
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom:0;  
-    background-image: linear-gradient(180deg, rgba(25, 25, 25, 0), rgba(25, 25, 25, .79));
-    z-index: -1;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(180deg,
+			rgba(25, 25, 25, 0),
+			rgba(25, 25, 25, 0.79));
+	z-index: -1;
 }
