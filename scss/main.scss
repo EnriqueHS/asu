@@ -13,6 +13,7 @@
 @import
   'components/_button',
   'components/_forms',
+  'components/_hero',
   'components/_posts';
 
 // Header
@@ -27,7 +28,6 @@
 
 // Home
   @import
-    'home/_hero',
     'home/_home',
     'home/_renders';
  
@@ -35,5 +35,9 @@
 // Blocks
   @import
     'blocks/_image_slider';
+
+//Templates
+@import
+    'templates/_about';
 
 

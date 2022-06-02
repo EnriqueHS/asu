@@ -1,0 +1,25 @@
+.hero {
+  background-image: url(/images/example/about-banner.jpg);
+  min-height: 31vw;
+
+  &--content {
+    @extend .container-sm ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 3;
+
+    .title {
+      @include h1();
+      font-weight: 700;
+      color: $white;
+      background-color: $black;
+    }
+    
+  }
+}
+
+.url__navigator {
+  @include url-navigator ();
+}
+@include text_block();

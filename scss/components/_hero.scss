@@ -1,0 +1,23 @@
+.hero {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+
+    img {
+        display: none;
+    }
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;  
+    background-image: linear-gradient(180deg, rgba(25, 25, 25, 0), rgba(25, 25, 25, .79));
+    z-index: -1;
+}

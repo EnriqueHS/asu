@@ -150,6 +150,7 @@
 		color: $primary-color;
 		font-weight: 700;
 		margin-bottom: 15px;
+    
 	}
 	h1 {
 		@include h1();
@@ -254,10 +255,34 @@
   }
 }
 
-
-
 @mixin icon-title {
   display: flex;
   align-items: center; 
   min-height: 4.5vw;
+}
+
+@mixin url-navigator {
+  
+
+  ul {
+    width: 100%;
+    margin-bottom:15px ;
+    padding:10px 0 ;
+
+    li {
+      display: inline;
+      padding-right: 10px;
+
+      a {
+        font-size: 16px;
+        text-decoration: underline;
+      }
+    }
+
+    li::after {
+      display: inline-block;
+    padding-left: 10px;
+    content: "/";
+    }
+  }
 }
