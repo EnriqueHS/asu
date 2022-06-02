@@ -1084,7 +1084,7 @@ strong * {
 }
 .header .navbar__container__right .navbar__primary .navbar__menu .menu__sub {
   position: absolute;
-  top: 2.5vw;
+  top: 2vw;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
