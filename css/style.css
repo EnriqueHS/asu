@@ -485,6 +485,11 @@ main {
 .image-container {
   max-width: 100%;
 }
+@media only screen and (max-width: 1050px) {
+  .image-container img {
+    width: 100%;
+  }
+}
 
 .content__block {
   width: 100%;
@@ -532,9 +537,6 @@ main {
     width: 100%;
     padding-left: 0;
   }
-}
-.content__block .right__content p {
-  font-size: 18px;
 }
 .content__block .right__content a {
   color: #8C1D40;
@@ -1880,6 +1882,11 @@ main .unequal__history {
   height: 29vw;
   padding: 57px 75px;
 }
+@media only screen and (max-width: 1050px) {
+  main .unequal__history {
+    padding: 20px;
+  }
+}
 main .unequal__history img {
   display: none;
 }
@@ -1888,6 +1895,11 @@ main .unequal__history h3 {
   color: #ffffff;
   font-weight: 700;
   font-size: 24px;
+}
+@media only screen and (max-width: 1050px) {
+  main .unequal__history h3 {
+    max-width: 100%;
+  }
 }
 main .unequal__history p {
   color: #ffffff;
@@ -2060,7 +2072,66 @@ main .content__block__grid .right__content {
   width: 180px;
 }
 
-#team-hero {
+#projects-hero {
   background-image: url(../images/example/programs-banner.jpg);
+}
+
+.title__projects {
+  font-size: 2.1vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  margin: 15px 0;
+}
+@media only screen and (max-width: 1050px) {
+  .title__projects {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .title__projects {
+    font-size: 16px;
+  }
+}
+
+.content__block--align {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 1050px) {
+  .content__block--align {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.content__block--align .left__content {
+  width: 35%;
+  padding: 20px 0;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 1050px) {
+  .content__block--align .left__content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .content__block--align .left__content br {
+    display: none;
+  }
+}
+.content__block--align .right__content {
+  width: 35%;
+  padding: 20px 0;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 1050px) {
+  .content__block--align .right__content {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

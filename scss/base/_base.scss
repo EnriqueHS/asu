@@ -344,6 +344,12 @@ main {
 
 .image-container {
   max-width: 100%;
+
+  @include responsive ('tablet-h') {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .content__block {
@@ -382,10 +388,6 @@ main {
     @include responsive ('tablet-h') {
       width: 100%;
       padding-left: 0;
-    }
-
-    p{
-      font-size: 18px;
     }
 
     a {
