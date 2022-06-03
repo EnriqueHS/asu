@@ -2017,7 +2017,7 @@ main .content__block__grid .right__content {
   }
 }
 .team-member .member__container .picture__member {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 1/1;
   margin-right: 20px;
   text-align: center;
