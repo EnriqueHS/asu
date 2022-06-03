@@ -6,7 +6,6 @@
   @include text_block();
   
   main {
-    margin-bottom: 3vw;    
     
     .unequal__history {
       background: url(../images/example/about-man-on-street.jpg) no-repeat center center /cover;
@@ -34,17 +33,35 @@
         width: 100%;
         display: flex;
         align-items: center;
+
+        @include responsive ('tablet-h') {
+          flex-direction: column;
+        }
     
         .left__content {
           width: 50%;
           padding: 40px 0;
           padding-right: 20px;
+
+          @include responsive ('tablet-h') {
+            width: 100%;
+            padding-right: 0;
+            
+            br {
+              display: none;
+            }
+          }
         }
     
         .right__content {
           width: 50%;
           padding: 20px 0;
           padding-left: 20px;
+
+          @include responsive ('tablet-h') {
+            width: 100%;
+            padding-left: 0;
+          }
     
           p{
             font-size: 18px;
@@ -53,6 +70,7 @@
           a {
             color: $third-color;
           }
+
         }
     }
     
@@ -66,12 +84,21 @@
     .content__block__grid {
       display: grid;
       grid-template-columns: 70% 1fr;
+
+      @include responsive ('tablet-h') {
+        grid-template-columns: 100%;
+      }
     
       .right__content {
         align-self: baseline;
         margin-top: 20px;
         margin-left: 20px;
         
+        @include responsive ('tablet-h') {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+        }
       }
     }
   
