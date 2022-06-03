@@ -29,50 +29,7 @@
       }
     }
     
-    .content__block {
-        width: 100%;
-        display: flex;
-        align-items: center;
-
-        @include responsive ('tablet-h') {
-          flex-direction: column;
-        }
     
-        .left__content {
-          width: 50%;
-          padding: 40px 0;
-          padding-right: 20px;
-
-          @include responsive ('tablet-h') {
-            width: 100%;
-            padding-right: 0;
-            
-            br {
-              display: none;
-            }
-          }
-        }
-    
-        .right__content {
-          width: 50%;
-          padding: 20px 0;
-          padding-left: 20px;
-
-          @include responsive ('tablet-h') {
-            width: 100%;
-            padding-left: 0;
-          }
-    
-          p{
-            font-size: 18px;
-          }
-    
-          a {
-            color: $third-color;
-          }
-
-        }
-    }
     
     .title__video {
       float: left;

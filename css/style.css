@@ -482,6 +482,64 @@ main {
   margin-bottom: 3vw;
 }
 
+.image-container {
+  max-width: 100%;
+}
+
+.content__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__block--align {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media only screen and (max-width: 1050px) {
+  .content__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.content__block .left__content {
+  width: 50%;
+  padding: 20px 0;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 1050px) {
+  .content__block .left__content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .content__block .left__content br {
+    display: none;
+  }
+}
+.content__block .right__content {
+  width: 50%;
+  padding: 20px 0;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 1050px) {
+  .content__block .right__content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.content__block .right__content p {
+  font-size: 18px;
+}
+.content__block .right__content a {
+  color: #8C1D40;
+}
+
 .button,
 .woocommerce .button,
 .woocommerce a.button {
@@ -1835,54 +1893,6 @@ main .unequal__history p {
   color: #ffffff;
   font-weight: 700;
 }
-main .content__block {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media only screen and (max-width: 1050px) {
-  main .content__block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-main .content__block .left__content {
-  width: 50%;
-  padding: 40px 0;
-  padding-right: 20px;
-}
-@media only screen and (max-width: 1050px) {
-  main .content__block .left__content {
-    width: 100%;
-    padding-right: 0;
-  }
-  main .content__block .left__content br {
-    display: none;
-  }
-}
-main .content__block .right__content {
-  width: 50%;
-  padding: 20px 0;
-  padding-left: 20px;
-}
-@media only screen and (max-width: 1050px) {
-  main .content__block .right__content {
-    width: 100%;
-    padding-left: 0;
-  }
-}
-main .content__block .right__content p {
-  font-size: 18px;
-}
-main .content__block .right__content a {
-  color: #8C1D40;
-}
 main .title__video {
   float: left;
   font-size: 18px;
@@ -2048,5 +2058,9 @@ main .content__block__grid .right__content {
   font-weight: 700;
   margin: 0 auto;
   width: 180px;
+}
+
+#team-hero {
+  background-image: url(../images/example/programs-banner.jpg);
 }
 /*# sourceMappingURL=style.css.map */

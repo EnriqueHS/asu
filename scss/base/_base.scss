@@ -342,4 +342,57 @@ main {
   margin-bottom: 3vw;
 }
 
+.image-container {
+  max-width: 100%;
+}
+
+.content__block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &--align {
+    align-items: flex-start;
+  }
+
+  @include responsive ('tablet-h') {
+    flex-direction: column;
+  }
+
+  .left__content {
+    width: 50%;
+    padding: 20px 0;
+    padding-right: 10px;
+
+    @include responsive ('tablet-h') {
+      width: 100%;
+      padding-right: 0;
+      
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .right__content {
+    width: 50%;
+    padding: 20px 0;
+    padding-left: 10px;
+
+    @include responsive ('tablet-h') {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    a {
+      color: $third-color;
+    }
+
+  }
+}
+
 
