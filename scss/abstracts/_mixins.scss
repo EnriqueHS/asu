@@ -231,7 +231,7 @@
   &--red {
     display: inline-block;
     font-weight: 700;
-    color: $white;
+    color: $white !important;
     text-align: center;
     vertical-align: middle;
     user-select: none;
@@ -255,6 +255,8 @@
     transform: scale(1.05);
   }
 }
+
+
 
 @mixin icon-title {
   display: flex;

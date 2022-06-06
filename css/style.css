@@ -588,7 +588,7 @@ main {
 .woocommerce a.button--red {
   display: inline-block;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
