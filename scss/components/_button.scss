@@ -1,25 +1,6 @@
-.button,
-.woocommerce .button,
-.woocommerce a.button {
+.button {
   @include button();
 }
 
-.image_slider{
 
-  @include responsive ('mobile-v'){
-    height: auto;
-  }
-  
-  .slick-initialized .slick-slide{
-    
-    @include responsive ('mobile-v'){
-      height:53vw;
-    } 
-  }
-  .image_slider__caption{
 
-    @include responsive ('mobile-v'){
-      padding-top: 0.3vw;
-    }
-  }
-}

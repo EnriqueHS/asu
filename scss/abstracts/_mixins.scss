@@ -246,9 +246,16 @@
     background-color: $third-color;
 
     &:hover {
-      border-color: #0062cc;
+      border-color: $blue;
     }
     
+  }
+
+  &--yellow {
+    background-color: $yellow !important;
+    color: $black-secondary;
+    padding: 1rem 2rem !important;
+    border-color: $yellow;
   }
 
   &:hover {

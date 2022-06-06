@@ -78,7 +78,6 @@ main {
       padding: 2vw 4vw;
       width: 50%; 
       margin: 0 auto;
-     
 
       @include responsive ('tablet-h') {
         max-width: 100%;
@@ -86,6 +85,86 @@ main {
       }
     }
   }
-  
+
+  .content__block--align {
+    width: 100%;
+    max-width: 1920px;
+
+    .left__block {
+      background: url(/images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg) no-repeat center center / cover; 
+      width: 100%;
+      height: 512px;
+      aspect-ratio: 1/1;
+      @include center-xy();
+      margin-right: 10px;
+      position: relative;
+
+      @include responsive ('tablet-h') {
+        margin: 10px 0;
+      }
+    }
+
+    .left__block::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:linear-gradient(180deg, #19191900 0%, #191919c9 100%);
+      z-index: 0;
+    }
+    
+    .right__block {
+      background: url(/images/example/1.png) no-repeat center center / cover; 
+      width: 100%;
+      height: 512px;
+      aspect-ratio: 1/1;
+      @include center-xy();
+      margin-left: 10px;
+      position: relative;
+
+      @include responsive ('tablet-h') {
+        margin: 10px 0;
+      }
+    }
+    .right__block::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, #19191900 0%, #191919c9 100%);
+      z-index: 0;
+    }
+    
+    .container__title__link {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 4rem;
+      z-index: 10;
+
+      @include responsive ('mobile-v') {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .title__criteria,
+      .title__research {
+        font-size: 35px;
+        color: $light-white;
+        margin-right: 20px;
+        font-weight: 700;
+
+        @include responsive ('mobile-v') {
+          margin: 0 0 20px 0;
+        }
+      }
+      
+    }
+
+  }
 }
 
