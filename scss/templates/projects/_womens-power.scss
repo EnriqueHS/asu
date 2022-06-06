@@ -1,0 +1,91 @@
+#womens-power-hero {
+  background-image: url(/images/example/crowded-metro-ted-eytan-web-900x509.jpg);
+  height: 56vw;
+}
+
+main {
+  
+  .title {
+    @include h5 ();
+    color: $black;
+  }
+
+  .video__text__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include responsive ('tablet-h') {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video__hero { 
+      
+      width: 100%;
+      height: 48.5vw;
+      overflow: hidden;
+      position: relative;
+      margin-right: 20px;
+
+      @include responsive ('tablet-h') {
+        height: 80.5vw;
+        margin-bottom: 25px;
+        max-width: 70%;
+      }
+
+      video {
+        width: 100%;
+      }
+    }
+
+    .title__yellow {
+      background: $yellow;
+      color: $black;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 50px 0;
+    }
+
+    .link__container a {
+      display: flex;
+      font-size: 22px;
+      font-weight: 700;
+      border: 1px solid $light-grey;
+      color: $primary-color;
+      background-color: #fff;
+      padding: 1.5vw;
+    }
+
+    .link__container a:hover {
+      text-decoration: underline;
+      display: block;
+    }
+  }
+
+  .center__container {
+    padding: 3vw;
+
+    @include responsive ('tablet-h') {
+      padding: 3vw 0;
+    }
+
+    .center__block {
+      background-color: $white;
+      border: 1px solid $light-grey;
+      max-width: 70%;
+      padding: 2vw 4vw;
+      width: 50%; 
+      margin: 0 auto;
+     
+
+      @include responsive ('tablet-h') {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+  
+}
+

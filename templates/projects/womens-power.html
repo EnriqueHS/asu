@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../images/example/favicon.ico" type="" />
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="shortcut icon" href="../../images/example/favicon.ico" type="" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-  <title>Projects | The Difference Engine</title>
+  <script type="text/javascript" src="js/particule.js"></script>
+  <title>WPI Landing | The Difference Engine</title>
 </head>
 <body>
 
@@ -47,8 +48,8 @@
       
       
           <a href="https://www.asu.edu" class="navbar__logo">
-            <img src="../images/example/arizona-state-university-logo-vertical.png" alt="Arizona State University">
-            <img src="../images/example/arizona-state-university-logo.png" class="navbar__logo--large"
+            <img src="../../images/example/arizona-state-university-logo-vertical.png" alt="Arizona State University">
+            <img src="../../images/example/arizona-state-university-logo.png" class="navbar__logo--large"
               alt="Arizona State University">
           </a>
       
@@ -59,8 +60,8 @@
             <nav class="navbar__primary">
               <ul aria-label="ASU" class="navbar__menu">
                 <li class="navbar__menu__item active">
-                  <a href="../index.html" class="icon__container">
-                    <img src="../images/example/home.jpg" alt="home">
+                  <a href="../../index.html" class="icon__container">
+                    <img src="../../images/example/home.jpg" alt="home">
                   </a>
                   <a class="home__responsive" href="../index.html">
                     <span class="">Home</span>
@@ -68,11 +69,11 @@
                 </li>
                 <li class="navbar__menu__item">
                   <a href="about.html" class="" role="button" tabindex="0">About </a>
-                  <img src="../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
+                  <img src="../../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
                   <div class="dropdown__item dropdown__item--one">
                     <ul class="menu__sub">
-                      <li class="navbar__link"><a href="about.html" class="nav__link">About us</a></li>
-                      <li class="navbar__link"><a href="team.html" class="nav__link">Our Team</a></li>
+                      <li class="navbar__link"><a href="../about.html" class="nav__link">About us</a></li>
+                      <li class="navbar__link"><a href="../team.html" class="nav__link">Our Team</a></li>
                     </ul>
                   </div>
                 </li>
@@ -80,10 +81,10 @@
       
                 <li class="navbar__menu__item">
                   <a href="/" class="" role="button" aria-expanded="false" tabindex="0">Research </a>
-                  <img src="../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
+                  <img src="../../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
                   <div class="dropdown__item dropdown__item--two">
                     <ul class="menu__sub">
-                      <li class="navbar__link"><a href="research.html" class="nav__link">Research</a></li>
+                      <li class="navbar__link"><a href="../research.html" class="nav__link">Research</a></li>
                     </ul>
                   </div>
                 </li>
@@ -91,20 +92,20 @@
       
                 <li class="navbar__menu__item">
                   <a href="/" class="" role="button" aria-expanded="false" tabindex="0">Projects </a>
-                  <img src="../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
+                  <img src="../../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
                   <div class="dropdown__item dropdown__item--three">
                     <ul class="menu__sub">
-                      <li class="navbar__link"><a href="projects.html" class="nav__link">Projects</a></li>
-                      <li class="navbar__link"><a href="/projects/womens-power-index" class="nav__link">Women's Power
+                      <li class="navbar__link"><a href="../projects.html" class="nav__link">Projects</a></li>
+                      <li class="navbar__link"><a href="." class="nav__link">Women's Power
                           Index</a></li>
-                      <li class="navbar__link"><a href="/projects/supercharger" class="nav__link">Supercharger</a></li>
+                      <li class="navbar__link"><a href="../projects/supercharger" class="nav__link">Supercharger</a></li>
                     </ul>
                   </div>
                 </li>
                 <li class="navbar__menu__item">
                   <div class="navbar__link">
                     <a href="/" class="" role="button" aria-expanded="false" tabindex="0">Curriculum</a>
-                    <img src="../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
+                    <img src="../../images/example/arrow.svg" alt="dropdown" class="nav-arrow">
                   </div>
                   <div class="dropdown__item dropdown__item--four">
                     <div>
@@ -138,10 +139,10 @@
   <!-- hero -->
   <section role="img">
     <div class="container">
-      <div class="hero hero--content" id="projects-hero">
-        <img src="../images/example/programs-banner.jpg" alt="hero">
+      <div class="hero hero--content" id="womens-power-hero">
+        <img src="../../images/example/programs-banner.jpg" alt="hero">
         <p class="uppertitle"></p>
-        <h1 class="title">Projects</h1>
+        <h1 class="title title--secondary">Women's Power & Influence Index</h1>
         <p></p>
       </div>
     </div>
@@ -155,8 +156,9 @@
       <div class="navigation">
         <div class="url__navigator">
           <ul>
-            <li><a href="../index.html">home</a></li>
-            <li><a href=".">Projects</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href=".">WPI Landing</a></li>
           </ul>
         </div>
       </div>
@@ -166,26 +168,32 @@
   
   <!-- main -->
 <main>
-  <section class="projects">
+  <section class="womens-power">
     <div class="container-sm">
-      <div class="content__block content__block--align">
-        <div class="left__content">
-          <div class="image-container">
-            <img src="../images/example/wpi-medium.jpg" alt="img">
-          </div>
-          <h3 class="title__projects">Women's Power Index</h3>
-          <p>The Women’s Power and Influence Index will score organizations on measures of inequality to uncover structural issues that prevent women from advancing in the workplace, particularly in the legal field.</p>
+      <h2 class="title">Public rankings ignite behavior change.</h2>
+      <div class="video__text__container">
+        
+        <div class="video__hero">
+          <video autoplay="" muted="" loop="" playsinline="" class="fixed-background">
+            <source src="/videos/example/trim_0DED1263-D5B9-48B2-BCF1-D46CAB6CE2DA.mp4">
+          </video>
         </div>
-        <div class="right__content">
-          <div class="image-container">
-            <img src="../images/example/supercharger.jpg" alt="img">
+        <div class="video__text">
+          <p class="">Imagine a world where companies were ranked on the basis of their gender policies and data around women's power and influence was shared, in a simple and easy to understand score, with the rest of the world – every year, like clockwork.</p>
+          <div class="title__yellow">The Women’s Power and Influence Index aims to do just that.</div>
+          <p class="">Just like a restaurant sinks or swims based on its Yelp reviews - companies will improve or decline on the basis of their placement on this Index. And in doing so, accelerate the drive towards gender equality so that we leave a strong and vibrant nation to our grandchildren.</p>
+          <div class="link__container">
+            <a href="projects/about-us.html" title="about">Find out more About the Index and Our Team >></a>
           </div>
-          <h3 class="title__projects">Supercharger</h3>
-          <p>a Shark Tank style incubator that connects small hyper-local grassroots NGOs and social entrepreneurs who have innovative ideas to help their communities with angel investors, companies and experts looking to make a direct, immediate and positive impact.</p>
         </div>
       </div>
-
-
+      <div class="center__container">
+      <div class="center__block">
+        <p>There are articles, tips/tricks, conferences, and companies are making DEI hires to combat this but we think there should be an index that keeps companies accountable.</p>
+        <h3 class="title">We are quantifying inequality.</h3>
+        <p>What if we shared the proof and held those who made promises to account? What would the world look like if everyone actually knew, on the basis of data – not HR corporate-speak or press releases – how a company treated its workers on the basis of their gender?</p>
+      </div>
+    </div>
     </div>
   </section>
 </main>
@@ -196,7 +204,6 @@
 
   <!-- footer -->
   <footer class="footer">
-
     <!-- animation -->
     <div class="wrapper">
     <section class="animation">
@@ -206,11 +213,11 @@
             <h3>Be a difference engineer</h3>
             <p>Sign up for our newsletter to stay up to date about the center and its work.</p>
             <div class="social__cont">
-              <a href="https://twitter.com/TheDiffEngASU" target="_blank"><img src="../images/example/twitter-footer.jpg"
+              <a href="https://twitter.com/TheDiffEngASU" target="_blank"><img src="../../images/example/twitter-footer.jpg"
                   alt="twitter"></a>
               <a href="https://www.instagram.com/thedifferenceengineasu/" target="_blank"><img
-                  src="../images/example/instagram-footer.jpg" alt="instagram"></a>
-              <a href="mailto:Ehsan.Zaffar@asu.edu"><img src="../images/example/twitter-footer.jpg" alt="email"></a>
+                  src="../../images/example/instagram-footer.jpg" alt="instagram"></a>
+              <a href="mailto:Ehsan.Zaffar@asu.edu"><img src="../../images/example/twitter-footer.jpg" alt="email"></a>
             </div>
           </div>
   
@@ -232,7 +239,7 @@
               <div class="sub__footer__menu">
                 <a class="nav-link" href="https://www.asu.edu/rankings">
                   <div class="image__cont">
-                  <img src="../images/example/GlobalFooter-Number-1-in-the-us-for-innovation.png" alt="Number one in the U.S. for innovation. #1 ASU, #2 Stanford, #3 MIT. - U.S. News and World Report, 5 years, 2016-2020">
+                  <img src="../../images/example/GlobalFooter-Number-1-in-the-us-for-innovation.png" alt="Number one in the U.S. for innovation. #1 ASU, #2 Stanford, #3 MIT. - U.S. News and World Report, 5 years, 2016-2020">
                 </div>
                 </a>
                 <nav class="sub__footer__item" aria-label="University Services">

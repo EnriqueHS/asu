@@ -18,6 +18,11 @@
 			font-weight: 700;
 			color: $white;
 			background-color: $black;
+
+			&--secondary {
+				color: $black;
+				background-color: $yellow;
+			}
 		}
 	}
 

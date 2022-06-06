@@ -185,9 +185,6 @@ strong * {
   width: 100%;
 }
 
-/**
- * Clear inner floats
- */
 .clearfix::after {
   clear: both;
   content: "";
@@ -697,6 +694,10 @@ main {
   .hero--content .title {
     font-size: 32px;
   }
+}
+.hero--content .title--secondary {
+  color: #000;
+  background-color: #ffc627;
 }
 .hero img {
   display: none;
@@ -2132,6 +2133,114 @@ main .content__block__grid .right__content {
   .content__block--align .right__content {
     width: 100%;
     padding-left: 0;
+  }
+}
+
+#womens-power-hero {
+  background-image: url(/images/example/crowded-metro-ted-eytan-web-900x509.jpg);
+  height: 56vw;
+}
+
+main .title {
+  font-size: 2.1vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  color: #000;
+}
+@media only screen and (max-width: 1050px) {
+  main .title {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main .title {
+    font-size: 16px;
+  }
+}
+main .video__text__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 1050px) {
+  main .video__text__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+main .video__text__container .video__hero {
+  width: 100%;
+  height: 48.5vw;
+  overflow: hidden;
+  position: relative;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1050px) {
+  main .video__text__container .video__hero {
+    height: 80.5vw;
+    margin-bottom: 25px;
+    max-width: 70%;
+  }
+}
+main .video__text__container .video__hero video {
+  width: 100%;
+}
+main .video__text__container .title__yellow {
+  background: #ffc627;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 50px 0;
+}
+main .video__text__container .link__container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  border: 1px solid #d0d0d0;
+  color: #191919;
+  background-color: #fff;
+  padding: 1.5vw;
+}
+main .video__text__container .link__container a:hover {
+  text-decoration: underline;
+  display: block;
+}
+main .center__container {
+  padding: 3vw;
+}
+@media only screen and (max-width: 1050px) {
+  main .center__container {
+    padding: 3vw 0;
+  }
+}
+main .center__container .center__block {
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  max-width: 70%;
+  padding: 2vw 4vw;
+  width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1050px) {
+  main .center__container .center__block {
+    max-width: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
