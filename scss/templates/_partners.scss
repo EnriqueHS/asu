@@ -1,0 +1,40 @@
+.partners {
+
+  .middle__block {
+
+    a {
+      color: $third-color;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .border__separate {
+    margin: 50px 0;
+  }
+
+  .content__block {
+    align-items: baseline;
+
+    .description__video {
+
+      .title__video {
+        @include h5();
+        width: 100%;
+      }
+    }
+  }
+  
+  .image-container {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  .text__format {
+    width: 75%;
+    margin: 0 auto;
+  }
+}

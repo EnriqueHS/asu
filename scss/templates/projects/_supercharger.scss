@@ -1,0 +1,117 @@
+.supercharger {
+
+  .center__block {
+    width: 100%;
+    min-height: 512px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive ('tablet-h') {
+      grid-template-columns: 100%;
+      align-items: center;
+    }
+   
+    .image__container {
+      
+      @include responsive ('tablet-h') {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+
+    .supercharger__image {
+      width: 85%;
+
+      @include responsive ('tablet-h') {
+        width: 50%;
+        margin: 0px 25% 0 25%;
+      }
+    }
+
+    .middle__block {
+
+      .title__middle {
+        @include h4();
+      }
+
+      a {
+        color: $third-color;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  
+  }
+
+  .text__format {
+    width: 75%;
+
+    @include responsive ('tablet-h') {
+      width: 100%;
+    }
+  }
+
+  .container__block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin-top: 100px;
+
+    @include responsive ('tablet-h') {
+      grid-template-columns: 100%;
+    }
+
+    #item__one {
+      background-image: url(/images/example/who-should.png);
+    }
+
+    #item__two {
+      background-image: url(/images/example/who-should-2.png);
+    }
+    
+    #item__three {
+      background-image: url(/images/example/who-should-3.gif);
+    }
+
+    .item__block {
+      align-items: center;
+      display: flex;
+      height: 512px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1920px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      margin: auto;
+      position: relative;
+
+      @include responsive ('tablet-h') {
+        margin-bottom: 50px;
+      }
+
+      .button, .button--secondary {
+        z-index: 3;
+        padding: 1rem 2rem !important;
+      }
+    }
+
+    .item__block::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.7882352941)));
+      background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
+      z-index: 0;
+    }
+  }
+}
