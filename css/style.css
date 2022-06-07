@@ -2379,6 +2379,11 @@ main .container #ruth-bader {
 main .container #ruth-bader .ruth-bader__text {
   width: 50%;
 }
+@media only screen and (max-width: 1050px) {
+  main .container #ruth-bader .ruth-bader__text {
+    width: 100%;
+  }
+}
 main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
   font-size: 24px;
   font-family: "Arial", sans-serif;

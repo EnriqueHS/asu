@@ -207,6 +207,10 @@ main {
       .ruth-bader__text {
         width: 50%;
 
+        @include responsive ('tablet-h') {
+          width: 100%
+        }
+
         .ruth-bader__title {
           @include h6();
           color: $white;
