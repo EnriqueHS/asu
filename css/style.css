@@ -539,6 +539,12 @@ main {
   color: #8C1D40;
 }
 
+.inactive {
+  text-decoration: none !important;
+  pointer-events: none;
+  cursor: default;
+}
+
 .button {
   font-weight: bold;
   display: inline-block;
