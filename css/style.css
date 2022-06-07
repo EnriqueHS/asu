@@ -2293,18 +2293,18 @@ main .content__block--align .right__block::before {
   background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
   z-index: 0;
 }
-main .content__block--align .container__title__link {
+main .container__title__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 4rem;
+  margin: 0 4vw;
   z-index: 10;
 }
 @media only screen and (max-width: 600px) {
-  main .content__block--align .container__title__link {
+  main .container__title__link {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2315,17 +2315,110 @@ main .content__block--align .container__title__link {
             align-items: center;
   }
 }
-main .content__block--align .container__title__link .title__criteria,
-main .content__block--align .container__title__link .title__research {
+main .container__title__link .title__criteria,
+main .container__title__link .title__research {
   font-size: 35px;
   color: #fafafa;
   margin-right: 20px;
   font-weight: 700;
 }
 @media only screen and (max-width: 600px) {
-  main .content__block--align .container__title__link .title__criteria,
-main .content__block--align .container__title__link .title__research {
+  main .container__title__link .title__criteria,
+main .container__title__link .title__research {
     margin: 0 0 20px 0;
   }
+}
+main .container #image-womens-power {
+  background: url(/images/example/report-template.png) no-repeat center 40%/cover;
+}
+main .container #time-line {
+  background: url(/images/example/time-line.png) no-repeat center center/cover;
+  height: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main .container #time-line .container__title__link {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 10;
+}
+main .container #time-line .container__title__link .title__gender {
+  color: #fafafa;
+  background: #191919;
+}
+main .container #time-line .button--yellow {
+  width: 240px;
+}
+main .container #ruth-bader {
+  background: url(/images/example/rbg-background.jpg) no-repeat center center/cover;
+  padding: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #ffffff;
+  margin-top: 100px;
+  height: 512px;
+}
+main .container #ruth-bader .ruth-bader__text {
+  width: 50%;
+}
+main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1050px) {
+  main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+    font-size: 14px;
+  }
+}
+main .container .center__block {
+  width: 100%;
+  height: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  margin-top: 100px;
+}
+main .container .center__block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.7882352941)));
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
+  z-index: 0;
 }
 /*# sourceMappingURL=style.css.map */
