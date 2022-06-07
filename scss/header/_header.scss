@@ -88,6 +88,12 @@
 			transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
 			position: relative;
 			align-items: flex-end;
+
+			@include responsive ('tablet-h') {
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+			}
 		}
 
 		&__logo {
@@ -112,7 +118,7 @@
 				display: block;
 				height: 32px;
 				width: auto;
-				margin: 0 0 1rem 2rem;
+				margin: 0 0 0 2rem;
 			}
 			
 		}
@@ -123,7 +129,14 @@
 			flex-direction: column;
 			align-items: flex-start;
 
-			.title {
+			h1 {
+				@include responsive ('tablet-h') {
+					@include h6();
+					margin: 0;
+				}
+			}
+
+			.title  {
 				font-size: 2rem;
 				margin: 1rem 0px;
 				font-weight: 700;
@@ -132,7 +145,7 @@
 					line-height: 1;
 					font-size: 1rem;
 					font-weight: 700;
-					margin: 0px 2rem 1.5rem;
+					margin: 0 2rem 0;
 					letter-spacing: -1px;
 					background-image: linear-gradient(to right, transparent 51%, rgb(255, 198, 38) 51%, 95%, transparent);
 					background-position: 0px 0px;
@@ -149,6 +162,7 @@
 				justify-content: space-between;
 				padding: 0px;
 				margin: 0px;
+				z-index: 100;
 
 				@include responsive ('tablet-h') {
 					display: none;
@@ -156,7 +170,6 @@
 					top: 8vw;
 					left: 0;
 					background-color: $white;
-					z-index: 100;
 				}
 
 				.navbar__menu {

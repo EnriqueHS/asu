@@ -1033,6 +1033,18 @@ main {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media only screen and (max-width: 1050px) {
+  .header .navbar__container__left {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .header .navbar__logo img {
   display: block;
   height: 72px;
@@ -1052,7 +1064,7 @@ main {
     display: block;
     height: 32px;
     width: auto;
-    margin: 0 0 1rem 2rem;
+    margin: 0 0 0 2rem;
   }
 }
 .header .navbar__container__right {
@@ -1068,6 +1080,24 @@ main {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media only screen and (max-width: 1050px) {
+  .header .navbar__container__right h1 {
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    line-height: 1.1;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1050px) and (max-width: 1050px) {
+  .header .navbar__container__right h1 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1050px) and (max-width: 600px) {
+  .header .navbar__container__right h1 {
+    font-size: 14px;
+  }
+}
 .header .navbar__container__right .title {
   font-size: 2rem;
   margin: 1rem 0px;
@@ -1078,7 +1108,7 @@ main {
     line-height: 1;
     font-size: 1rem;
     font-weight: 700;
-    margin: 0px 2rem 1.5rem;
+    margin: 0 2rem 0;
     letter-spacing: -1px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(51%, transparent), color-stop(51%, rgb(255, 198, 38)), color-stop(95%), to(transparent));
     background-image: linear-gradient(to right, transparent 51%, rgb(255, 198, 38) 51%, 95%, transparent);
@@ -1103,6 +1133,7 @@ main {
           justify-content: space-between;
   padding: 0px;
   margin: 0px;
+  z-index: 100;
 }
 @media only screen and (max-width: 1050px) {
   .header .navbar__container__right .navbar__primary {
@@ -1111,7 +1142,6 @@ main {
     top: 8vw;
     left: 0;
     background-color: #ffffff;
-    z-index: 100;
   }
 }
 .header .navbar__container__right .navbar__primary .navbar__menu {
