@@ -2638,4 +2638,9 @@ main .container .center__block::before {
   width: 75%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1050px) {
+  .partners .text__format {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

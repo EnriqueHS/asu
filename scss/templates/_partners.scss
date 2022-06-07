@@ -36,5 +36,9 @@
   .text__format {
     width: 75%;
     margin: 0 auto;
+
+    @include responsive ('tablet-h') {
+      width: 100%;
+    }
   }
 }
