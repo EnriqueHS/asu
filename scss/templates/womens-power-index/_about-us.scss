@@ -17,11 +17,20 @@
       background: $primary-color;
       color: $light-white;
     }
+
+    &--yellow {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: -.0525rem;
+      background: $yellow;
+      color: $primary-color;
+    }
   }
 
   .image__container {
     width: 100%;
     position: relative;
     height: 25vw;
+    margin: 35px 0;
   }
 }

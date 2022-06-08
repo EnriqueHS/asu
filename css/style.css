@@ -477,6 +477,7 @@ strong * {
 
 main {
   margin-bottom: 3vw;
+  border: 2px solid red;
 }
 
 .image-container {
@@ -2758,9 +2759,17 @@ main .container .center__block::before {
   background: #191919;
   color: #fafafa;
 }
+.about-us .uppertitle--yellow {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.0525rem;
+  background: #ffc627;
+  color: #191919;
+}
 .about-us .image__container {
   width: 100%;
   position: relative;
   height: 25vw;
+  margin: 35px 0;
 }
 /*# sourceMappingURL=style.css.map */
