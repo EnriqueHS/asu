@@ -1198,6 +1198,9 @@ main {
             align-items: center;
   }
 }
+.header .navbar__container__right .navbar__primary .navbar__menu__item .menu__sub > li {
+  padding: 0.5rem 0;
+}
 .header .navbar__container__right .navbar__primary .navbar__menu .nav-arrow {
   width: 10px;
   margin-left: 10px;
@@ -2674,9 +2677,9 @@ main .container .center__block::before {
 .news-and-events .card__layout {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 40px;
 }
 @media only screen and (max-width: 1050px) {
   .news-and-events .card__layout {

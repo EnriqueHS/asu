@@ -204,6 +204,10 @@
 						}
 					}
 
+					&__item .menu__sub > li {
+						padding: 0.5rem 0;
+					} 
+
 					.nav-arrow {
 						width: 10px;
 						margin-left: 10px;
