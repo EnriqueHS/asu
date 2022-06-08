@@ -38,7 +38,7 @@
     margin: 0 auto;
 
     @include responsive ('tablet-h') {
-      width: 100%;
+      width: 100%; 
     }
   }
 }
