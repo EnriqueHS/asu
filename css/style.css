@@ -165,7 +165,7 @@ h6, .h6, .h6 p {
 }
 
 a {
-  color: #191919;
+  color: rgb(25, 25, 25);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -555,13 +555,13 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border: 1px solid #8c1d40;
+  border: 1px solid rgb(140, 29, 64);
   line-height: 1rem;
   border-radius: 400rem;
   -webkit-transition: all 0.03s ease-in-out 0s;
   transition: all 0.03s ease-in-out 0s;
   font-size: 0.875rem;
-  background-color: #8c1d40;
+  background-color: rgb(140, 29, 64);
   padding: 0.5rem 1rem !important;
   color: #ffffff;
   cursor: pointer;
@@ -942,8 +942,8 @@ main {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0;
-  background: white;
-  border-bottom: 1px solid #d0d0d0;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(208, 208, 208);
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
 }
@@ -970,7 +970,7 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #e8e8e8;
+  background-color: rgb(232, 232, 232);
   height: 24px;
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
@@ -997,7 +997,7 @@ main {
   display: inline-flex;
   font-size: 0.75rem;
   padding: 0px 0.5rem;
-  color: #484848;
+  color: rgb(72, 72, 72);
   margin: 0px;
   position: relative;
 }
@@ -1007,7 +1007,7 @@ main {
   }
 }
 .header .navbar {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1116,8 +1116,8 @@ main {
     font-weight: 700;
     margin: 0 2rem 0;
     letter-spacing: -1px;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(51%, transparent), color-stop(51%, #ffc626), color-stop(95%), to(transparent));
-    background-image: linear-gradient(to right, transparent 51%, #ffc626 51%, 95%, transparent);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(51%, transparent), color-stop(51%, rgb(255, 198, 38)), color-stop(95%), to(transparent));
+    background-image: linear-gradient(to right, transparent 51%, rgb(255, 198, 38) 51%, 95%, transparent);
     background-position: 0px 0px;
     background-size: 200%;
     display: inline-block;
@@ -1180,7 +1180,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5rem 0.75rem;
-  color: #191919;
+  color: rgb(25, 25, 25);
   margin-right: 0.5rem;
   text-transform: capitalize;
 }
@@ -1192,7 +1192,7 @@ main {
         -ms-flex-pack: justify;
             justify-content: space-between;
     display: block;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid rgb(204, 204, 204);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1226,8 +1226,8 @@ main {
   content: "";
   display: block;
   height: 0.5rem;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5%, transparent), color-stop(0.5%, #ffc627));
-  background-image: linear-gradient(to right, transparent 0.5%, #ffc627 0.5%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5%, transparent), color-stop(0.5%, rgb(255, 198, 39)));
+  background-image: linear-gradient(to right, transparent 0.5%, rgb(255, 198, 39) 0.5%);
   position: relative;
   bottom: 0px;
   width: 0px;
@@ -1244,8 +1244,8 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: white;
-  border: 1px solid #d0d0d0;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(208, 208, 208);
   opacity: 1;
   z-index: 100;
   -webkit-box-orient: vertical;
@@ -1272,7 +1272,7 @@ main {
   padding: 0.5rem 0px;
 }
 .header .navbar__container__right .navbar__primary .navbar__menu .navbar__link > a.nav__link:hover {
-  color: #8c1d40;
+  color: rgb(140, 29, 64);
   text-decoration: underline;
 }
 .header .navbar__container__right .navbar__primary .navbar__menu .home__responsive {
@@ -1328,7 +1328,7 @@ main {
   position: relative;
   -webkit-transform: translateY(25px);
           transform: translateY(25px);
-  background: #191919;
+  background: rgb(25, 25, 25);
   -webkit-transition: all 0ms 300ms;
   transition: all 0ms 300ms;
 }
@@ -1338,7 +1338,7 @@ main {
   position: absolute;
   left: 0;
   bottom: 6px;
-  background: #191919;
+  background: rgb(25, 25, 25);
   -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -1350,7 +1350,7 @@ main {
   position: absolute;
   left: 0;
   top: 6px;
-  background: #191919;
+  background: rgb(25, 25, 25);
   -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -2292,8 +2292,8 @@ main .content__block--align .left__block::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919c9));
-  background: linear-gradient(180deg, #19191900 0%, #191919c9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.7882352941)));
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
   z-index: 0;
 }
 main .content__block--align .right__block {
@@ -2325,8 +2325,8 @@ main .content__block--align .right__block::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919c9));
-  background: linear-gradient(180deg, #19191900 0%, #191919c9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.7882352941)));
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
   z-index: 0;
 }
 main .container__title__link {
@@ -2458,8 +2458,8 @@ main .container .center__block::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919c9));
-  background: linear-gradient(180deg, #19191900 0%, #191919c9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.7882352941)));
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
   z-index: 0;
 }
 
@@ -2549,13 +2549,13 @@ main .container .center__block::before {
   }
 }
 .supercharger .container__block #item__one {
-  background-image: url(/images/example/who-should.png);
+  background-image: url(../images/example/who-should.png);
 }
 .supercharger .container__block #item__two {
-  background-image: url(/images/example/who-should-2.png);
+  background-image: url(../images/example/who-should-2.png);
 }
 .supercharger .container__block #item__three {
-  background-image: url(/images/example/who-should-3.gif);
+  background-image: url(../images/example/who-should-3.gif);
 }
 .supercharger .container__block .item__block {
   -webkit-box-align: center;
@@ -2642,5 +2642,22 @@ main .container .center__block::before {
   .partners .text__format {
     width: 100%;
   }
+}
+
+#news-hero {
+  background-image: url(../images/example/about-banner.jpg);
+}
+
+.news-and-events .card__layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+.news-and-events .card__layout .card__item {
+  width: 200px;
+  min-height: 420px;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
 }
 /*# sourceMappingURL=style.css.map */

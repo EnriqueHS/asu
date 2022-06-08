@@ -1,0 +1,19 @@
+#news-hero {
+  background-image: url(../images/example/about-banner.jpg);
+}
+
+.news-and-events {
+
+  .card__layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .card__item {
+      width: 200px;
+      min-height: 420px;
+      box-shadow: 5px 10px 18px $dark-grey;
+    }
+
+  }
+  
+}
