@@ -2728,4 +2728,39 @@ main .container .center__block::before {
 .news-and-events .card__layout .card__link__news .link__news:hover {
   text-decoration: none;
 }
+
+#about-us-hero {
+  background-image: url(../images/example/about-us-hero.jpg);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+.about-us .uppertitle {
+  font-size: 2.1vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1050px) {
+  .about-us .uppertitle {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about-us .uppertitle {
+    font-size: 16px;
+  }
+}
+.about-us .uppertitle--black {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.0525rem;
+  background: #191919;
+  color: #fafafa;
+}
+.about-us .image__container {
+  width: 100%;
+  position: relative;
+  height: 25vw;
+}
 /*# sourceMappingURL=style.css.map */
