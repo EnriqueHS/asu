@@ -2648,16 +2648,81 @@ main .container .center__block::before {
   background-image: url(../images/example/about-banner.jpg);
 }
 
+.news-and-events .container {
+  background-color: #e8e8e8;
+  padding: 40px 0;
+  margin: 40px 0;
+}
+.news-and-events .title__news,
+.news-and-events .title__events {
+  font-size: 2.6vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+}
+@media only screen and (max-width: 1050px) {
+  .news-and-events .title__news,
+.news-and-events .title__events {
+    font-size: 2.6vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .news-and-events .title__news,
+.news-and-events .title__events {
+    font-size: 16px;
+  }
+}
 .news-and-events .card__layout {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media only screen and (max-width: 1050px) {
+  .news-and-events .card__layout {
+    -ms-grid-columns: 80%;
+    grid-template-columns: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .news-and-events .card__layout {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
 }
 .news-and-events .card__layout .card__item {
-  width: 200px;
-  min-height: 420px;
+  min-height: 416px;
+  background: #ffffff;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
+}
+@media only screen and (max-width: 1050px) {
+  .news-and-events .card__layout .card__item {
+    min-height: 516px;
+  }
+}
+.news-and-events .card__layout .card__item .card__picture {
+  width: 100%;
+  position: relative;
+  display: block;
+  aspect-ratio: 1.6;
+}
+.news-and-events .card__layout .card__link__news {
+  padding: 1vw;
+}
+@media only screen and (max-width: 600px) {
+  .news-and-events .card__layout .card__link__news {
+    padding: 4vw;
+  }
+}
+.news-and-events .card__layout .card__link__news .link__news {
+  color: #8C1D40;
+  text-decoration: underline;
+}
+.news-and-events .card__layout .card__link__news .link__news:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
