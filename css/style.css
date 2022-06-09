@@ -69,13 +69,13 @@ select {
 }
 
 h1, .h1, .h1 p {
-  font-size: 5.75vw;
+  font-size: 5.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   h1, .h1, .h1 p {
-    font-size: 5.75vw;
+    font-size: 5.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -670,7 +670,7 @@ main {
   z-index: 3;
 }
 .hero--content .title {
-  font-size: 5.75vw;
+  font-size: 5.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
   font-weight: 700;
@@ -679,7 +679,7 @@ main {
 }
 @media only screen and (max-width: 1050px) {
   .hero--content .title {
-    font-size: 5.75vw;
+    font-size: 5.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -810,13 +810,13 @@ main {
   margin-bottom: 15px;
 }
 .single-page h1 {
-  font-size: 5.75vw;
+  font-size: 5.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h1 {
-    font-size: 5.75vw;
+    font-size: 5.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1812,13 +1812,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5.75vw;
+  font-size: 5.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   h1 {
-    font-size: 5.75vw;
+    font-size: 5.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2816,5 +2816,16 @@ main .container .center__block::before {
   background-color: #ffc627;
   max-width: 16rem;
   margin: 5vw 0;
+}
+
+#news-and-events-single {
+  background-image: url(../../../images/example/bcls-ne-corner-article.jpg);
+  min-height: 42vw;
+  background-position: center 100%;
+}
+
+.news-and-events-single {
+  font-size: 50px;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
