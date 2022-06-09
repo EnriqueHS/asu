@@ -130,9 +130,10 @@
 			align-items: flex-start;
 
 			h1 {
+				margin: 0;
+
 				@include responsive ('tablet-h') {
 					@include h6();
-					margin: 0;
 				}
 			}
 

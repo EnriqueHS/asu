@@ -339,6 +339,7 @@ strong * {
 }
 
 main {
+  margin-top: 1vw;
   margin-bottom: 3vw;
   border: 2px solid red;
 }
@@ -403,6 +404,12 @@ main {
   pointer-events: none;
   cursor: default;
 }
+
+//container block text
+.text__format {
+  width: 100%;
+}
+
 
 
 
