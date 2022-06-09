@@ -1,0 +1,32 @@
+.tab__menu {
+  width: 100%;
+  
+
+  .tab__container {
+    width: 100%;
+    display: inline-block;
+    padding: 2vw 0;
+
+    .tab__item {
+      padding: 20px 20px 5px 20px;
+      border-bottom: 8px solid $white;
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: capitalize;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $third-color;
+        border-bottom: 8px solid $third-color;
+      }
+
+      &--active {
+        border-bottom: 8px solid $third-color;
+      }
+    }
+  }
+
+  
+}

@@ -30,7 +30,26 @@
   .image__container {
     width: 100%;
     position: relative;
-    height: 25vw;
+    padding-top: 53%;
     margin: 35px 0;
   }
+
+  .text__format {
+    width: 100%;
+
+    ul li {
+      list-style: disc;
+    }
+  }
+
+  .our__team__container {
+
+    .border__separate_middle {
+      height: 0.5rem;
+      background-color: $yellow;
+      max-width: 16rem;
+      margin: 5vw 0;
+    }
+  }
+
 }

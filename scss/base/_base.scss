@@ -137,9 +137,15 @@ strong * {
     align-items: center;
 }
 
+.image__container {
+  width: 100%;
+  position: relative;
+}
+
 .image-background {
   @include image-background();
 }
+
 
 .iframe-wrapper {
   @include row();
