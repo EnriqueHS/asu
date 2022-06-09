@@ -69,13 +69,13 @@ select {
 }
 
 h1, .h1, .h1 p {
-  font-size: 5.25vw;
+  font-size: 4.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   h1, .h1, .h1 p {
-    font-size: 5.25vw;
+    font-size: 4.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -556,6 +556,55 @@ main {
   width: 100%;
 }
 
+.uppertitle {
+  font-size: 2.1vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1050px) {
+  .uppertitle {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .uppertitle {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .uppertitle {
+    font-size: 3.13vw;
+    font-family: "Arial", sans-serif;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 1050px) and (max-width: 1050px) {
+  .uppertitle {
+    font-size: 3.13vw;
+  }
+}
+@media only screen and (max-width: 1050px) and (max-width: 600px) {
+  .uppertitle {
+    font-size: 18px;
+  }
+}
+.uppertitle--black {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.0525rem;
+  background: #191919;
+  color: #fafafa;
+}
+.uppertitle--yellow {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.0525rem;
+  background: #ffc627;
+  color: #191919;
+}
+
 .button {
   font-weight: bold;
   display: inline-block;
@@ -675,7 +724,7 @@ main {
   z-index: 3;
 }
 .hero--content .title {
-  font-size: 5.25vw;
+  font-size: 4.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
   font-weight: 700;
@@ -684,7 +733,7 @@ main {
 }
 @media only screen and (max-width: 1050px) {
   .hero--content .title {
-    font-size: 5.25vw;
+    font-size: 4.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -815,13 +864,13 @@ main {
   margin-bottom: 20px;
 }
 .single-page h1 {
-  font-size: 5.25vw;
+  font-size: 4.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h1 {
-    font-size: 5.25vw;
+    font-size: 4.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1819,13 +1868,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5.25vw;
+  font-size: 4.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   h1 {
-    font-size: 5.25vw;
+    font-size: 4.25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2845,5 +2894,74 @@ main .container .center__block::before {
   .news-and-events-single .title__news__events__single {
     font-size: 18px;
   }
+}
+
+.who-should-apply .Title__who__should {
+  padding-bottom: 100px;
+}
+.who-should-apply .list__no__link {
+  padding: 3vw 5vw 3vw 2vw;
+}
+.who-should-apply .list__no__link li {
+  margin-bottom: 1.5vw;
+  list-style: disc;
+}
+.who-should-apply .who__should__layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50px 50%;
+  grid-template-columns: 50% 50%;
+  gap: 50px;
+}
+@media only screen and (max-width: 1050px) {
+  .who-should-apply .who__should__layout {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+}
+.who-should-apply__item {
+  border: 1px solid;
+}
+
+.why-supercharger .solution__list li {
+  margin-bottom: 15px;
+}
+.why-supercharger .solution__image {
+  background: url(../images/example/flowchart.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  margin-top: 100px;
+}
+.why-supercharger .solution__image .solution__link {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 10;
+  margin: 0 4vw;
+}
+.why-supercharger .solution__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(rgba(25, 25, 25, 0.7882352941)));
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
+  z-index: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -278,6 +278,8 @@ strong * {
       margin-bottom: 0;
     }
   }
+
+
 }
 
 .site {
@@ -410,6 +412,30 @@ main {
   width: 100%;
 }
 
+.uppertitle {
+  @include h5 ();
+  margin-bottom: 30px;
 
+  @include responsive ('tablet-h') {
+    @include h3 ();
+    margin-bottom: 15px;
+  }
+
+  &--black {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -.0525rem;
+    background: $primary-color;
+    color: $light-white;
+  }
+
+  &--yellow { 
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -.0525rem;
+    background: $yellow;
+    color: $primary-color;
+  }
+}
 
 
