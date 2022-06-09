@@ -2806,6 +2806,7 @@ main .container .center__block::before {
 }
 .about-us .text__format {
   width: 100%;
+  padding: 40px 0;
 }
 .about-us .text__format ul li {
   list-style: disc;
