@@ -1,6 +1,6 @@
 .tab__menu {
   width: 100%;
-  
+  margin-bottom: 3vw;
 
   .tab__container {
     width: 100%;
@@ -24,6 +24,7 @@
 
       &--active {
         border-bottom: 8px solid $third-color;
+        color: $third-color;
       }
     }
   }

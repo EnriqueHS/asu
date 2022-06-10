@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap'); */
 html {
   -webkit-box-sizing: border-box;
@@ -867,6 +868,7 @@ main {
   font-size: 4.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.14rem;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h1 {
@@ -882,6 +884,7 @@ main {
   font-size: 3.9vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0875rem;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h2 {
@@ -897,6 +900,7 @@ main {
   font-size: 3.13vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0525rem;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h3 {
@@ -912,6 +916,7 @@ main {
   font-size: 2.6vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0325rem;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h4 {
@@ -927,6 +932,7 @@ main {
   font-size: 2.1vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0225rem;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h5 {
@@ -942,6 +948,7 @@ main {
   font-size: 24px;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0125rem;
 }
 @media only screen and (max-width: 1050px) {
   .single-page h6 {
@@ -985,6 +992,7 @@ main {
 
 .tab__menu {
   width: 100%;
+  margin-bottom: 3vw;
 }
 .tab__menu .tab__container {
   width: 100%;
@@ -1008,6 +1016,7 @@ main {
 }
 .tab__menu .tab__container .tab__item--active {
   border-bottom: 8px solid #8C1D40;
+  color: #8C1D40;
 }
 
 .header {
@@ -1871,6 +1880,7 @@ h1 {
   font-size: 4.25vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.14rem;
 }
 @media only screen and (max-width: 1050px) {
   h1 {
@@ -1887,6 +1897,7 @@ h2 {
   font-size: 3.9vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0875rem;
 }
 @media only screen and (max-width: 1050px) {
   h2 {
@@ -1903,6 +1914,7 @@ h3 {
   font-size: 3.13vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0525rem;
 }
 @media only screen and (max-width: 1050px) {
   h3 {
@@ -1919,6 +1931,7 @@ h4 {
   font-size: 2.6vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0325rem;
 }
 @media only screen and (max-width: 1050px) {
   h4 {
@@ -1935,6 +1948,7 @@ h5 {
   font-size: 2.1vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0225rem;
 }
 @media only screen and (max-width: 1050px) {
   h5 {
@@ -1951,6 +1965,7 @@ h6 {
   font-size: 24px;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
+  letter-spacing: -0.0125rem;
 }
 @media only screen and (max-width: 1050px) {
   h6 {
@@ -2857,7 +2872,7 @@ main .container .center__block::before {
 .about-us .image__container {
   width: 100%;
   position: relative;
-  padding-top: 53%;
+  padding-top: 51%;
   margin: 35px 0;
 }
 .about-us .text__format {
@@ -2872,6 +2887,107 @@ main .container .center__block::before {
   background-color: #ffc627;
   max-width: 16rem;
   margin: 5vw 0;
+}
+
+#criteria-methodology-hero {
+  background-image: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+.criteria-methodology .super__title {
+  font-size: 2.1vw;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+}
+@media only screen and (max-width: 1050px) {
+  .criteria-methodology .super__title {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .criteria-methodology .super__title {
+    font-size: 16px;
+  }
+}
+.criteria-methodology .accordion__container__item {
+  border: 1px solid #d0d0d0;
+  border-left: 0.5vw solid #8C1D40;
+  margin-bottom: 1.8vw;
+}
+.criteria-methodology .accordion__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1vw 1vw;
+}
+.criteria-methodology .accordion__title .accordion-dropdown {
+  max-width: 1.3vw;
+}
+.criteria-methodology .accordion__link {
+  font-size: 1.3vw;
+  font-weight: 700;
+  color: #191919;
+  line-height: 1.3;
+  margin: 0;
+}
+.criteria-methodology .accordion__collapse {
+  padding: 2.5vw 1vw;
+  background-color: #fafafa;
+  text-align: left;
+}
+
+#research-womens-power-hero {
+  background-image: url(../images/example/1.png);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+.research-womens-power .image__container {
+  padding-top: 51%;
+  margin: 35px 0 0 0;
+  border: 1px solid #d0d0d0;
+  border-bottom: none;
+}
+.research-womens-power .text__small__research__container {
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  border-top: none;
+  padding: 1vw 1.5vw;
+  margin: 0;
+}
+.research-womens-power .text__small__research {
+  text-align: left;
+  font-size: 1vw;
+  font-weight: 400;
+  color: #747474;
+}
+.research-womens-power .layout__grid__blockquote {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1.5vw 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 1.5vw;
+  font-size: 1.25vw;
+  font-weight: 700;
+  padding: 2rem;
+}
+.research-womens-power .blackquote p {
+  font-weight: 700;
+}
+.research-womens-power .blackquote .citation cite {
+  font-weight: 700;
+}
+.research-womens-power .blackquote .citation cite::before {
+  padding-right: 0.5vw;
+  margin-top: -5px;
+  content: "—";
 }
 
 #news-and-events-single {

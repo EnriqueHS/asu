@@ -151,24 +151,31 @@
 		font-weight: 700;
 		margin-bottom: 20px;
     
+    
 	}
 	h1 {
 		@include h1();
+    letter-spacing: -.14rem;
 	}
 	h2 {
 		@include h2();
+    letter-spacing: -.0875rem;
 	}
 	h3 {
 		@include h3();
+    letter-spacing: -.0525rem;
 	}
 	h4 {
 		@include h4();
+    letter-spacing: -.0325rem;
 	}
 	h5 {
 		@include h5();
+    letter-spacing: -.0225rem;
 	}
 	h6 {
 		@include h6();
+    letter-spacing: -.0125rem;
 	}
 	p {
 		line-height: 1.6;
@@ -291,8 +298,9 @@
 
     li::after {
       display: inline-block;
-    padding-left: 10px;
-    content: "/";
+      padding-left: 10px;
+      content: "/";
     }
+
   }
 }

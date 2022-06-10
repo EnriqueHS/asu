@@ -1,0 +1,59 @@
+#research-womens-power-hero {
+  background-image: url(../images/example/1.png);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+.research-womens-power{ 
+  
+  .image__container {
+    padding-top: 51%;
+    margin: 35px 0 0 0;
+    border: 1px solid $light-grey;
+    border-bottom: none;
+  }
+
+  .text__small__research__container {
+    width: 100%;
+    border: 1px solid $light-grey;
+    border-top: none;
+    padding: 1vw 1.5vw;
+    margin: 0;
+  }
+
+  .text__small__research {
+    text-align: left;
+    
+    font-size: 1vw;
+    font-weight: 400;
+    color: $dark-grey-second;
+  }
+
+  .layout__grid__blockquote {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5vw;
+    font-size: 1.25vw;
+    font-weight: 700;
+    padding: 2rem;
+  }
+
+  .blackquote {
+    p {
+      font-weight: 700;
+    }
+
+    .citation {
+      cite {
+        font-weight: 700;
+      }
+
+      cite::before {
+        padding-right: 0.5vw;
+        margin-top: -5px;
+        content: "\2014";
+      }
+      
+    }
+  }  
+}

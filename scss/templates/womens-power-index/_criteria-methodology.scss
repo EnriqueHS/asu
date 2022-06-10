@@ -1,0 +1,47 @@
+#criteria-methodology-hero {
+  background-image: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+.criteria-methodology {
+
+  .super__title {
+    @include h5();
+  }
+  
+  .accordion {
+
+    &__container__item {
+      border: 1px solid $light-grey;
+      border-left: 0.5vw solid $third-color;
+      margin-bottom: 1.8vw;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1vw 1vw;
+
+      .accordion-dropdown {
+        max-width: 1.3vw;
+      }
+    }
+
+    &__link {
+      font-size: 1.3vw;
+      font-weight: 700;
+      color: $primary-color;
+      line-height: 1.3; 
+      margin: 0;
+    }
+
+    &__collapse {
+      padding: 2.5vw 1vw;
+      background-color: $light-white;
+      text-align: left;
+
+    }
+  }
+}
