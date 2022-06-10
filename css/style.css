@@ -1043,7 +1043,8 @@ main {
   padding: 2vw 0;
 }
 .tab__menu .tab__container .tab__item {
-  padding: 20px 20px 5px 20px;
+  padding: 20px 0px 5px 0px;
+  margin: 20px 20px 5px 20px;
   border-bottom: 8px solid #ffffff;
   color: #191919;
   text-decoration: none;
@@ -1060,6 +1061,7 @@ main {
 .tab__menu .tab__container .tab__item--active {
   border-bottom: 8px solid #8C1D40;
   color: #8C1D40;
+  border-radius: 10px 8px 5px 10px;
 }
 
 .header {
@@ -2857,6 +2859,11 @@ main .content__block__grid .right__content {
   padding-top: 51%;
   margin: 35px 0;
 }
+@media only screen and (max-width: 600px) {
+  .about-us .image__container {
+    margin: 25px 0;
+  }
+}
 .about-us .text__format {
   width: 100%;
   padding: 40px 0;
@@ -2869,6 +2876,11 @@ main .content__block__grid .right__content {
   background-color: #ffc627;
   max-width: 16rem;
   margin: 5vw 0;
+}
+@media only screen and (max-width: 600px) {
+  .about-us .our__team__container .border__separate_middle {
+    max-width: 100%;
+  }
 }
 
 .criteria-methodology .super__title {
@@ -2913,6 +2925,11 @@ main .content__block__grid .right__content {
   line-height: 1.3;
   margin: 0;
 }
+@media only screen and (max-width: 1050px) {
+  .criteria-methodology .accordion__link {
+    font-size: 2.3vw;
+  }
+}
 .criteria-methodology .accordion__collapse {
   padding: 2.5vw 1vw;
   background-color: #fafafa;
@@ -2938,6 +2955,16 @@ main .content__block__grid .right__content {
   font-weight: 400;
   color: #747474;
 }
+@media only screen and (max-width: 1050px) {
+  .research-womens-power .text__small__research {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .research-womens-power .text__small__research {
+    font-size: 2.3vw;
+  }
+}
 .research-womens-power .layout__grid__blockquote {
   display: -ms-grid;
   display: grid;
@@ -2946,13 +2973,49 @@ main .content__block__grid .right__content {
   gap: 1.5vw;
   font-size: 1.25vw;
   font-weight: 700;
-  padding: 2rem;
+  padding: 5vw;
+}
+@media only screen and (max-width: 1050px) {
+  .research-womens-power .layout__grid__blockquote {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding: 5vw 2.5vw;
+  }
+}
+.research-womens-power .layout__grid__blockquote .quote {
+  width: 2.5vw;
+}
+@media only screen and (max-width: 1050px) {
+  .research-womens-power .layout__grid__blockquote .quote {
+    width: 50px;
+  }
 }
 .research-womens-power .blackquote p {
   font-weight: 700;
 }
+@media only screen and (max-width: 1050px) {
+  .research-womens-power .blackquote p {
+    font-size: 2.2vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .research-womens-power .blackquote p {
+    font-size: 2.5vw;
+  }
+}
 .research-womens-power .blackquote .citation cite {
   font-weight: 700;
+}
+@media only screen and (max-width: 1050px) {
+  .research-womens-power .blackquote .citation cite {
+    font-size: 2.2vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .research-womens-power .blackquote .citation cite {
+    font-size: 3vw;
+  }
 }
 .research-womens-power .blackquote .citation cite::before {
   padding-right: 0.5vw;

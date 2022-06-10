@@ -6,6 +6,10 @@
     position: relative;
     padding-top: 51%;
     margin: 35px 0;
+    
+    @include responsive ('mobile-v') {
+      margin: 25px 0;
+    }
   }
 
   .text__format {
@@ -24,6 +28,10 @@
       background-color: $yellow;
       max-width: 16rem;
       margin: 5vw 0;
+
+      @include responsive ('mobile-v') {
+        max-width: 100%;
+      }
     }
   }
 
