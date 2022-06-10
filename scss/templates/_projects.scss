@@ -1,45 +1,46 @@
-#projects-hero {
-  background-image: url(../images/example/programs-banner.jpg);
-}
 
-.title__projects {
-  @include h5();
-  margin: 15px 0;
-}
+.projects {
 
-.content__block--align {
-  align-items: flex-start;
-  justify-content: center;
-
-  @include responsive ('tablet-h') {
-    flex-direction: column;
+  .title__projects {
+    @include h5();
+    margin: 15px 0;
   }
-
-  .left__content {
-    width: 35%;
-    padding: 20px 0;
-    padding-right: 10px;
-
+  
+  .content__block--align {
+    align-items: flex-start;
+    justify-content: center;
+  
     @include responsive ('tablet-h') {
-      width: 100%;
-      padding-right: 0;
-      
-      br {
-        display: none;
+      flex-direction: column;
+    }
+  
+    .left__content {
+      width: 35%;
+      padding: 20px 0;
+      padding-right: 10px;
+  
+      @include responsive ('tablet-h') {
+        width: 100%;
+        padding-right: 0;
+        
+        br {
+          display: none;
+        }
       }
     }
-  }
-
-  .right__content {
-    width: 35%;
-    padding: 20px 0;
-    padding-left: 10px;
-
-    @include responsive ('tablet-h') {
-      width: 100%;
-      padding-left: 0;
+  
+    .right__content {
+      width: 35%;
+      padding: 20px 0;
+      padding-left: 10px;
+  
+      @include responsive ('tablet-h') {
+        width: 100%;
+        padding-left: 0;
+      }
+  
+  
     }
-
-
   }
 }
+

@@ -56,7 +56,7 @@
     }
   }
 
-  .container__block {
+  .container__block { //no pasar a grids
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

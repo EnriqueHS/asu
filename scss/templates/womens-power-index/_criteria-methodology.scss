@@ -1,15 +1,9 @@
-#criteria-methodology-hero {
-  background-image: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg);
-  min-height: 42vw;
-  background-position: center 55%;
-}
-
 .criteria-methodology {
 
   .super__title {
     @include h5();
   }
-  
+
   .accordion {
 
     &__container__item {

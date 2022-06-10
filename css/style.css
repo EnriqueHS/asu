@@ -762,6 +762,49 @@ main {
   z-index: -1;
 }
 
+#about-hero {
+  background-image: url(../images/example/about-banner.jpg);
+}
+
+#team-hero {
+  background-image: url(../images/example/our-people-banner.jpg);
+}
+
+#research-hero {
+  background-image: url(../images/example/research-banner.jpg);
+}
+
+#projects-hero {
+  background-image: url(../images/example/programs-banner.jpg);
+}
+
+#womens-power-hero {
+  background-image: url(../images/example/crowded-metro-ted-eytan-web-900x509.jpg);
+  height: 56vw;
+}
+
+#news-hero {
+  background-image: url(../images/example/about-banner.jpg);
+}
+
+#about-us-hero {
+  background-image: url(../images/example/about-us-hero.jpg);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+#criteria-methodology-hero {
+  background-image: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
+#research-womens-power-hero {
+  background-image: url(../images/example/1.png);
+  min-height: 42vw;
+  background-position: center 55%;
+}
+
 .url__navigator ul {
   width: 100%;
   margin-bottom: 15px;
@@ -1866,10 +1909,6 @@ main {
   right: 0;
 }
 
-#about-hero {
-  background-image: url(../images/example/about-banner.jpg);
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #191919;
   font-weight: 700;
@@ -2061,10 +2100,6 @@ main .content__block__grid .right__content {
   }
 }
 
-#team-hero {
-  background-image: url(../images/example/our-people-banner.jpg);
-}
-
 .team .team__layout {
   display: -ms-grid;
   display: grid;
@@ -2183,9 +2218,6 @@ main .content__block__grid .right__content {
   }
 }
 
-.research #research-hero {
-  background-image: url(../images/example/research-banner.jpg);
-}
 .research .coming__soon {
   font-size: 24px;
   padding: 5px 10px;
@@ -2196,28 +2228,23 @@ main .content__block__grid .right__content {
   width: 180px;
 }
 
-#projects-hero {
-  background-image: url(../images/example/programs-banner.jpg);
-}
-
-.title__projects {
+.projects .title__projects {
   font-size: 2.1vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
   margin: 15px 0;
 }
 @media only screen and (max-width: 1050px) {
-  .title__projects {
+  .projects .title__projects {
     font-size: 2.1vw;
   }
 }
 @media only screen and (max-width: 600px) {
-  .title__projects {
+  .projects .title__projects {
     font-size: 16px;
   }
 }
-
-.content__block--align {
+.projects .content__block--align {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2226,61 +2253,56 @@ main .content__block__grid .right__content {
           justify-content: center;
 }
 @media only screen and (max-width: 1050px) {
-  .content__block--align {
+  .projects .content__block--align {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 }
-.content__block--align .left__content {
+.projects .content__block--align .left__content {
   width: 35%;
   padding: 20px 0;
   padding-right: 10px;
 }
 @media only screen and (max-width: 1050px) {
-  .content__block--align .left__content {
+  .projects .content__block--align .left__content {
     width: 100%;
     padding-right: 0;
   }
-  .content__block--align .left__content br {
+  .projects .content__block--align .left__content br {
     display: none;
   }
 }
-.content__block--align .right__content {
+.projects .content__block--align .right__content {
   width: 35%;
   padding: 20px 0;
   padding-left: 10px;
 }
 @media only screen and (max-width: 1050px) {
-  .content__block--align .right__content {
+  .projects .content__block--align .right__content {
     width: 100%;
     padding-left: 0;
   }
 }
 
-#womens-power-hero {
-  background-image: url(../images/example/crowded-metro-ted-eytan-web-900x509.jpg);
-  height: 56vw;
-}
-
-main .title__womens__power {
+.womens-power .title__womens__power {
   font-size: 2.1vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
   color: #000;
 }
 @media only screen and (max-width: 1050px) {
-  main .title__womens__power {
+  .womens-power .title__womens__power {
     font-size: 2.1vw;
   }
 }
 @media only screen and (max-width: 600px) {
-  main .title__womens__power {
+  .womens-power .title__womens__power {
     font-size: 16px;
   }
 }
-main .video__text__container {
+.womens-power .video__text__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2292,7 +2314,7 @@ main .video__text__container {
           align-items: center;
 }
 @media only screen and (max-width: 1050px) {
-  main .video__text__container {
+  .womens-power .video__text__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2305,7 +2327,7 @@ main .video__text__container {
             align-items: center;
   }
 }
-main .video__text__container .video__hero {
+.womens-power .video__text__container .video__hero {
   width: 100%;
   height: 48.5vw;
   overflow: hidden;
@@ -2313,23 +2335,23 @@ main .video__text__container .video__hero {
   margin-right: 20px;
 }
 @media only screen and (max-width: 1050px) {
-  main .video__text__container .video__hero {
+  .womens-power .video__text__container .video__hero {
     height: 80.5vw;
     margin-bottom: 25px;
     max-width: 70%;
   }
 }
-main .video__text__container .video__hero video {
+.womens-power .video__text__container .video__hero video {
   width: 100%;
 }
-main .video__text__container .title__yellow {
+.womens-power .video__text__container .title__yellow {
   background: #ffc627;
   color: #000;
   font-weight: 700;
   font-size: 20px;
   margin: 50px 0;
 }
-main .video__text__container .link__container a {
+.womens-power .video__text__container .link__container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2340,19 +2362,19 @@ main .video__text__container .link__container a {
   background-color: #fff;
   padding: 1.5vw;
 }
-main .video__text__container .link__container a:hover {
+.womens-power .video__text__container .link__container a:hover {
   text-decoration: underline;
   display: block;
 }
-main .center__container {
+.womens-power .center__container {
   padding: 3vw;
 }
 @media only screen and (max-width: 1050px) {
-  main .center__container {
+  .womens-power .center__container {
     padding: 3vw 0;
   }
 }
-main .center__container .center__block {
+.womens-power .center__container .center__block {
   background-color: #ffffff;
   border: 1px solid #d0d0d0;
   max-width: 70%;
@@ -2361,16 +2383,16 @@ main .center__container .center__block {
   margin: 0 auto;
 }
 @media only screen and (max-width: 1050px) {
-  main .center__container .center__block {
+  .womens-power .center__container .center__block {
     max-width: 100%;
     width: 100%;
   }
 }
-main .content__block--align {
+.womens-power .content__block--align {
   width: 100%;
   max-width: 1920px;
 }
-main .content__block--align .left__block {
+.womens-power .content__block--align .left__block {
   background: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg) no-repeat center center/cover;
   width: 100%;
   height: 512px;
@@ -2388,11 +2410,11 @@ main .content__block--align .left__block {
   position: relative;
 }
 @media only screen and (max-width: 1050px) {
-  main .content__block--align .left__block {
+  .womens-power .content__block--align .left__block {
     margin: 10px 0;
   }
 }
-main .content__block--align .left__block::before {
+.womens-power .content__block--align .left__block::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2403,7 +2425,7 @@ main .content__block--align .left__block::before {
   background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
   z-index: 0;
 }
-main .content__block--align .right__block {
+.womens-power .content__block--align .right__block {
   background: url(../images/example/1.png) no-repeat center center/cover;
   width: 100%;
   height: 512px;
@@ -2421,11 +2443,11 @@ main .content__block--align .right__block {
   position: relative;
 }
 @media only screen and (max-width: 1050px) {
-  main .content__block--align .right__block {
+  .womens-power .content__block--align .right__block {
     margin: 10px 0;
   }
 }
-main .content__block--align .right__block::before {
+.womens-power .content__block--align .right__block::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2436,7 +2458,7 @@ main .content__block--align .right__block::before {
   background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, rgba(25, 25, 25, 0.7882352941) 100%);
   z-index: 0;
 }
-main .container__title__link {
+.womens-power .container__title__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2447,7 +2469,7 @@ main .container__title__link {
   z-index: 10;
 }
 @media only screen and (max-width: 600px) {
-  main .container__title__link {
+  .womens-power .container__title__link {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2458,23 +2480,23 @@ main .container__title__link {
             align-items: center;
   }
 }
-main .container__title__link .title__criteria,
-main .container__title__link .title__research {
+.womens-power .container__title__link .title__criteria,
+.womens-power .container__title__link .title__research {
   font-size: 35px;
   color: #fafafa;
   margin-right: 20px;
   font-weight: 700;
 }
 @media only screen and (max-width: 600px) {
-  main .container__title__link .title__criteria,
-main .container__title__link .title__research {
+  .womens-power .container__title__link .title__criteria,
+.womens-power .container__title__link .title__research {
     margin: 0 0 20px 0;
   }
 }
-main .container #image-womens-power {
+.womens-power .container #image-womens-power {
   background: url(../images/example/report-template.png) no-repeat center 40%/cover;
 }
-main .container #time-line {
+.womens-power .container #time-line {
   background: url(../images/example/time-line.png) no-repeat center center/cover;
   height: 700px;
   -webkit-box-orient: vertical;
@@ -2485,7 +2507,7 @@ main .container #time-line {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-main .container #time-line .container__title__link {
+.womens-power .container #time-line .container__title__link {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2495,14 +2517,14 @@ main .container #time-line .container__title__link {
           align-items: flex-start;
   z-index: 10;
 }
-main .container #time-line .container__title__link .title__gender {
+.womens-power .container #time-line .container__title__link .title__gender {
   color: #fafafa;
   background: #191919;
 }
-main .container #time-line .button--yellow {
+.womens-power .container #time-line .button--yellow {
   width: 240px;
 }
-main .container #ruth-bader {
+.womens-power .container #ruth-bader {
   background: url(../images/example/rbg-background.jpg) no-repeat center center/cover;
   padding: 3vw;
   display: -webkit-box;
@@ -2519,31 +2541,31 @@ main .container #ruth-bader {
   margin-top: 100px;
   height: 512px;
 }
-main .container #ruth-bader .ruth-bader__text {
+.womens-power .container #ruth-bader .ruth-bader__text {
   width: 50%;
 }
 @media only screen and (max-width: 1050px) {
-  main .container #ruth-bader .ruth-bader__text {
+  .womens-power .container #ruth-bader .ruth-bader__text {
     width: 100%;
   }
 }
-main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+.womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
   font-size: 24px;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
   color: #ffffff;
 }
 @media only screen and (max-width: 1050px) {
-  main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+  .womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 600px) {
-  main .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+  .womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
     font-size: 14px;
   }
 }
-main .container .center__block {
+.womens-power .container .center__block {
   width: 100%;
   height: 512px;
   display: -webkit-box;
@@ -2558,7 +2580,7 @@ main .container .center__block {
   position: relative;
   margin-top: 100px;
 }
-main .container .center__block::before {
+.womens-power .container .center__block::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2751,10 +2773,6 @@ main .container .center__block::before {
   }
 }
 
-#news-hero {
-  background-image: url(../images/example/about-banner.jpg);
-}
-
 .news-and-events .container {
   background-color: #e8e8e8;
   padding: 40px 0;
@@ -2833,12 +2851,6 @@ main .container .center__block::before {
   text-decoration: none;
 }
 
-#about-us-hero {
-  background-image: url(../images/example/about-us-hero.jpg);
-  min-height: 42vw;
-  background-position: center 55%;
-}
-
 .about-us .image__container {
   width: 100%;
   position: relative;
@@ -2857,12 +2869,6 @@ main .container .center__block::before {
   background-color: #ffc627;
   max-width: 16rem;
   margin: 5vw 0;
-}
-
-#criteria-methodology-hero {
-  background-image: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg);
-  min-height: 42vw;
-  background-position: center 55%;
 }
 
 .criteria-methodology .super__title {
@@ -2911,12 +2917,6 @@ main .container .center__block::before {
   padding: 2.5vw 1vw;
   background-color: #fafafa;
   text-align: left;
-}
-
-#research-womens-power-hero {
-  background-image: url(../images/example/1.png);
-  min-height: 42vw;
-  background-position: center 55%;
 }
 
 .research-womens-power .image__container {
