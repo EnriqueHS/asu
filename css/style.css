@@ -2042,60 +2042,60 @@ a:hover {
   text-decoration: underline;
 }
 
-main .unequal__history {
+.about .unequal__history {
   background: url(../images/example/about-man-on-street.jpg) no-repeat center center/cover;
   height: 29vw;
   padding: 57px 75px;
 }
 @media only screen and (max-width: 1050px) {
-  main .unequal__history {
+  .about .unequal__history {
     padding: 20px;
   }
 }
-main .unequal__history img {
+.about .unequal__history img {
   display: none;
 }
-main .unequal__history h3 {
+.about .unequal__history h3 {
   max-width: 45%;
   color: #ffffff;
   font-weight: 700;
   font-size: 24px;
 }
 @media only screen and (max-width: 1050px) {
-  main .unequal__history h3 {
+  .about .unequal__history h3 {
     max-width: 100%;
   }
 }
-main .unequal__history p {
+.about .unequal__history p {
   color: #ffffff;
   font-weight: 700;
 }
-main .title__video {
+.about .title__video {
   float: left;
   font-size: 18px;
   padding: 20px 0;
   font-weight: 700;
 }
-main .content__block__grid {
+.about .content__block__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 1fr;
   grid-template-columns: 70% 1fr;
 }
 @media only screen and (max-width: 1050px) {
-  main .content__block__grid {
+  .about .content__block__grid {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
   }
 }
-main .content__block__grid .right__content {
+.about .content__block__grid .right__content {
   -ms-flex-item-align: baseline;
       align-self: baseline;
   margin-top: 20px;
   margin-left: 20px;
 }
 @media only screen and (max-width: 1050px) {
-  main .content__block__grid .right__content {
+  .about .content__block__grid .right__content {
     width: 100%;
     margin-left: 0;
     text-align: center;
@@ -2331,7 +2331,7 @@ main .content__block__grid .right__content {
 }
 .womens-power .video__text__container .video__hero {
   width: 100%;
-  height: 48.5vw;
+  height: 42.5vw;
   overflow: hidden;
   position: relative;
   margin-right: 20px;
@@ -2345,6 +2345,28 @@ main .content__block__grid .right__content {
 }
 .womens-power .video__text__container .video__hero video {
   width: 100%;
+}
+.womens-power .video__text__container .video__hero .button--yellow {
+  position: absolute;
+  left: 1vw;
+  bottom: 2vw;
+}
+.womens-power .video__text__container .video__hero .buttons-tiktok {
+  position: absolute;
+  right: 1vw;
+  bottom: 2vw;
+}
+.womens-power .video__text__container .video__hero .buttons-tiktok button {
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  opacity: 0.3;
+  border: 1px solid #d0d0d0;
+  text-align: center;
+  border-radius: 48px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  outline: none;
 }
 .womens-power .video__text__container .title__yellow {
   background: #ffc627;
