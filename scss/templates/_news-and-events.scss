@@ -26,9 +26,11 @@
     }
 
     .card__item {
-      min-height:416px;
+      min-height:465px;
       background:$white; 
-      box-shadow: 5px 10px 18px $dark-grey;
+      box-shadow: 2px 2px 5px $dark-grey;
+      border: 1px solid $light-white;
+      transition: all 0.3s ease;
 
       @include responsive ('tablet-h') {
         min-height: 516px;
@@ -40,7 +42,14 @@
         display: block;
         aspect-ratio: 1.6;
       }
+
+      &:hover {
+        transform: translate(1px, -1px);
+      }
     }
+
+    
+    
 
     .card__link__news {
       padding: 1vw;
@@ -49,14 +58,13 @@
         padding: 4vw;
       }
 
-      .link__news {
-        color: $third-color;
-        text-decoration: underline;
+     .card__link__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+     }
 
-        &:hover {
-          text-decoration: none;
-        }
-      }
+      
     }
   }
   
