@@ -9,6 +9,10 @@
   .title__news,
   .title__events {
     @include h4();
+
+    @include responsive ('mobile-v') {
+      font-size: 4.5vw;
+    }
   }
 
   .card__layout {
@@ -17,8 +21,9 @@
     gap:40px;
 
     @include responsive ('tablet-h') {
-      grid-template-columns: 80%;
+      grid-template-columns: 50% 50%;
       justify-content: center;
+      gap:20px;
     }
 
     @include responsive ('mobile-v') {
@@ -48,21 +53,22 @@
       }
     }
 
-    
-    
-
     .card__link__news {
-      padding: 1vw;
+      padding: 1.2vw;
 
       @include responsive ('mobile-v') {
         padding: 4vw;
       }
 
-     .card__link__title {
+    .card__link__title {
       font-weight: 700;
-      font-size: 24px;
+      font-size: 1.5vw;
       line-height: 1.2;
-     }
+
+      @include responsive ('mobile-v') {
+        font-size: 4vw;
+      }
+    }
 
       
     }

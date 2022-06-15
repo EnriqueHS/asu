@@ -208,13 +208,14 @@
   text-decoration: none;
   vertical-align: middle;
   user-select: none;
-  border: 1px solid rgb(140, 29, 64);
-  line-height: 1rem;
-  border-radius: 400rem;
+  border: 1px solid $third-color;
+  line-height: 1;
+  border-radius: 5vw;
   transition: all 0.03s ease-in-out 0s;
   font-size: 0.875rem;
-  background-color: rgb(140, 29, 64);
+  background-color: $third-color;
   padding: 0.5rem 1rem !important;
+
   color: $white;
   cursor: pointer;
   /* font-size: 16px;
@@ -229,7 +230,7 @@
   transition: all .3s ease;
   text-align: center;  */
 
-  &--secondary {
+  &--secondary { //black
     background-color:$primary-color;
     color:$white;
     border: none;
@@ -240,20 +241,16 @@
     font-weight: 700;
     color: $white !important;
     text-align: center;
-    vertical-align: middle;
     user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 1rem 2rem !important;
-    font-size: 1rem;
-    line-height: 1rem;
-    border-radius: 400rem;
     transition: .03s ease-in-out;
-   
     background-color: $third-color;
+    padding: 0 2vw !important;
+    font-size: 16px;
+    line-height: 3;
+    border-radius: 5vw;
 
     &:hover {
-      border-color: $blue;
+      border-color: $third-color;
     }
     
   }
@@ -261,8 +258,10 @@
   &--yellow {
     background-color: $yellow !important;
     color: $black-secondary;
-    padding: 1rem 2rem !important;
+    padding: 0 2vw !important;
     border-color: $yellow;
+    line-height: 3;
+    font-size: 16px;
   }
 
   &:hover {
@@ -283,8 +282,8 @@
 
   ul {
     width: 100%;
-    margin-bottom:15px ;
-    padding:10px 0 ;
+    margin-bottom: 15px;
+    padding: 30px 0;
 
     li {
       display: inline;

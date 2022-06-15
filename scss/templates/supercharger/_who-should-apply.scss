@@ -12,16 +12,6 @@
       list-style: disc;
     }
   }
-
-  .who__should__layout {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 50px;
-
-    @include responsive ('tablet-h') {
-      grid-template-columns: 100%;
-    }
-  }
   
   &__item {
     border: 1px solid;

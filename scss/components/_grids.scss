@@ -1,0 +1,81 @@
+//about
+.content__block__grid {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+
+  @include responsive ('tablet-h') {
+    grid-template-columns: 100%;
+  }
+
+  .right__content {
+    align-self: baseline;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    @include responsive ('tablet-h') {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}
+
+//team
+.team__layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  justify-items: center;
+
+  @include responsive ('tablet-h') {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  @include responsive ('mobile-v') {
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+  }
+}
+
+//supercharger  who-should-apply
+.who__should__layout {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 50px;
+
+  @include responsive ('tablet-h') {
+    grid-template-columns: 100%;
+  }
+}
+
+//
+.layout__grid__blockquote {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5vw;
+  font-size: 1.25vw;
+  font-weight: 700;
+  padding: 5vw;
+
+  @include responsive ('tablet-h') {
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding: 5vw 2.5vw;
+  }
+
+  .quote {
+    width: 2.5vw;
+
+    @include responsive ('tablet-h') {
+      width: 50px;
+    }
+
+    @include responsive ('movile-v') {
+      width: 75px;
+    }
+  }
+} 
+
+
+

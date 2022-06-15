@@ -13,12 +13,15 @@
 		align-items: center;
 		justify-content: flex-start;
 		z-index: 3;
+		
 
 		.title {
 			@include h1();
+			padding: 1vw 1.5vw;
 			font-weight: 700;
 			color: $white;
 			background-color: $black;
+			z-index: 5;
 
 			&--secondary {
 				color: $black;
@@ -27,8 +30,8 @@
 		}
 	}
 
-	img {
-		display: none;
+	&--hero-xl {
+		height: 56vw;
 	}
 }
 
@@ -40,57 +43,16 @@
 	right: 0;
 	bottom: 0;
 	background-image: linear-gradient(180deg,rgba(25, 25, 25, 0),rgba(25, 25, 25, 0.79));
-	z-index: -1;
+	z-index: 1;
 }
 
-//about us
-#about-hero {
-	background-image: url(../images/example/about-banner.jpg);
-}
-
-//team
-#team-hero {
-  background-image: url(../images/example/our-people-banner.jpg);
-}
-
-//research
-#research-hero {
-	background-image: url(../images/example/research-banner.jpg);
-}
-
-//projects
-#projects-hero {
-  background-image: url(../images/example/programs-banner.jpg);
-}
 
 //womenrs-power
-#womens-power-hero {
-  background-image: url(../images/example/crowded-metro-ted-eytan-web-900x509.jpg);
-  height: 56vw;
-}
-
-//news-and-events
-#news-hero {
-  background-image: url(../images/example/about-banner.jpg);
-}
-
-//abous-us
-#about-us-hero {
-  background-image: url(../images/example/about-us-hero.jpg);
-  min-height: 42vw;
-  background-position: center 55%;
-}
-
-//womens-power-index/criteria-methodology
-#criteria-methodology-hero {
-  background-image: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg);
-  min-height: 42vw;
-  background-position: center 55%;
-}
-
-//womens-power-index/research-womens-power
+#womens-power-hero,
+#about-us-hero,
+#criteria-methodology-hero,
 #research-womens-power-hero {
-  background-image: url(../images/example/1.png);
-  min-height: 42vw;
-  background-position: center 55%;
+  height: 46vw;
 }
+
+

@@ -1,6 +1,6 @@
 .supercharger {
 
-  .center__block {
+  .center__block { //no pasar a grids
     width: 100%;
     min-height: 512px;
     display: grid;
@@ -99,6 +99,7 @@
       .button, .button--secondary {
         z-index: 3;
         padding: 1rem 2rem !important;
+        line-height: 1;
       }
     }
 

@@ -30,32 +30,6 @@
     }
   }
 
-  .layout__grid__blockquote {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1.5vw;
-    font-size: 1.25vw;
-    font-weight: 700;
-    padding: 5vw;
-
-    @include responsive ('tablet-h') {
-      grid-template-columns: 100%;
-      justify-items: center;
-      padding: 5vw 2.5vw;
-    }
-
-    .quote {
-      width: 2.5vw;
-
-      @include responsive ('tablet-h') {
-        width: 50px;
-      }
-
-      @include responsive ('movile-v') {
-        width: 75px;
-      }
-    }
-  } 
 
   .blackquote {
     p {
