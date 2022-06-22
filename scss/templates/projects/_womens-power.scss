@@ -40,6 +40,7 @@
         position: absolute;
         left: 1vw;
         bottom: 2vw;
+        font-size: 0.875rem;
       }
       
       .buttons-tiktok {
@@ -68,6 +69,7 @@
       font-weight: 700;
       font-size: 20px;
       margin: 50px 0;
+      padding: 10px 3px;
     }
 
     .link__container a {
@@ -113,7 +115,7 @@
     max-width: 1920px;
 
     .left__block {
-      background: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg) no-repeat center center / cover; 
+      background: url(../images/example/pencils-in-a-circle.jpg) no-repeat center center / cover; 
       width: 100%;
       height: 512px;
       aspect-ratio: 1/1;
@@ -138,7 +140,7 @@
     }
     
     .right__block {
-      background: url(../images/example/1.png) no-repeat center center / cover; 
+      background: url(../images/example/women-power-index-research.jpg) no-repeat center center / cover; 
       width: 100%;
       height: 512px;
       aspect-ratio: 1/1;
@@ -168,10 +170,11 @@
     margin: 0 4vw;
     z-index: 10;  
 
-    @include responsive ('mobile-v') {
+    @include responsive ('tablet-h') {
       flex-direction: column;
       text-align: center;
       align-items: center;
+      gap: 30px;
     }
 
     .title__criteria,
@@ -181,8 +184,8 @@
       margin-right: 20px;
       font-weight: 700;
 
-      @include responsive ('mobile-v') {
-        margin: 0 0 20px 0;
+      @include responsive ('tablet-h') {
+        margin-right: 0;
       }
     }
     
@@ -199,6 +202,11 @@
       height: 700px;
       flex-direction: column;
       align-items: flex-start;
+      justify-content: center;
+
+      @include responsive ('mobile-v') {
+        align-items: center;
+      }
       
       .container__title__link {
         flex-direction: column;
@@ -208,6 +216,7 @@
         .title__gender {
           color: $light-white;
           background: $primary-color;
+          padding: 1vw 1.5vw;
         }
       }
 
@@ -236,6 +245,10 @@
         .ruth-bader__title {
           @include h6();
           color: $white;
+
+          @include responsive ('mobile-v') {
+            @include h2();
+          }
         }
       }
     }
@@ -248,6 +261,10 @@
       justify-content: flex-end;
       position: relative;
       margin-top: 100px;
+
+      @include responsive ('mobile-v') {
+        justify-content: center;
+      }
     }
   
     .center__block::before {

@@ -214,8 +214,7 @@
   transition: all 0.03s ease-in-out 0s;
   font-size: 0.875rem;
   background-color: $third-color;
-  padding: 0.5rem 1rem !important;
-
+  padding: 0.5rem 1rem;
   color: $white;
   cursor: pointer;
   /* font-size: 16px;
@@ -244,10 +243,11 @@
     user-select: none;
     transition: .03s ease-in-out;
     background-color: $third-color;
-    padding: 0 2vw !important;
+    
     font-size: 16px;
-    line-height: 3;
+    line-height: 1;
     border-radius: 5vw;
+    padding: 15px 30px;
 
     &:hover {
       border-color: $third-color;
@@ -258,9 +258,9 @@
   &--yellow {
     background-color: $yellow !important;
     color: $black-secondary;
-    padding: 0 2vw !important;
+    padding: 15px 30px;
     border-color: $yellow;
-    line-height: 3;
+    line-height: 1;
     font-size: 16px;
   }
 

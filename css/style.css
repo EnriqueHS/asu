@@ -554,6 +554,7 @@ main {
 
 .text__format {
   width: 100%;
+  border: 2px solid red;
 }
 
 .uppertitle {
@@ -561,6 +562,7 @@ main {
   font-family: "Arial", sans-serif;
   line-height: 1.1;
   margin-bottom: 30px;
+  padding: 10px 5px;
 }
 @media only screen and (max-width: 1050px) {
   .uppertitle {
@@ -622,7 +624,7 @@ main {
   transition: all 0.03s ease-in-out 0s;
   font-size: 0.875rem;
   background-color: #8C1D40;
-  padding: 0.5rem 1rem !important;
+  padding: 0.5rem 1rem;
   color: #ffffff;
   cursor: pointer;
   /* font-size: 16px;
@@ -654,10 +656,10 @@ main {
   -webkit-transition: 0.03s ease-in-out;
   transition: 0.03s ease-in-out;
   background-color: #8C1D40;
-  padding: 0 2vw !important;
   font-size: 16px;
-  line-height: 3;
+  line-height: 1;
   border-radius: 5vw;
+  padding: 15px 30px;
 }
 .button--red:hover {
   border-color: #8C1D40;
@@ -665,9 +667,9 @@ main {
 .button--yellow {
   background-color: #ffc627 !important;
   color: #212529;
-  padding: 0 2vw !important;
+  padding: 15px 30px;
   border-color: #ffc627;
-  line-height: 3;
+  line-height: 1;
   font-size: 16px;
 }
 .button:hover {
@@ -1418,6 +1420,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media only screen and (max-width: 1280px) {
   .footer .container .box__signup {
@@ -2062,7 +2067,7 @@ a:hover {
 .projects .content__block--align .left__content {
   width: 35%;
   padding: 20px 0;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 @media only screen and (max-width: 1050px) {
   .projects .content__block--align .left__content {
@@ -2076,13 +2081,16 @@ a:hover {
 .projects .content__block--align .right__content {
   width: 35%;
   padding: 20px 0;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 @media only screen and (max-width: 1050px) {
   .projects .content__block--align .right__content {
     width: 100%;
     padding-left: 0;
   }
+}
+.projects .content__block--align .text__projects {
+  min-height: 7vw;
 }
 
 .womens-power .title__womens__power {
@@ -2147,6 +2155,7 @@ a:hover {
   position: absolute;
   left: 1vw;
   bottom: 2vw;
+  font-size: 0.875rem;
 }
 .womens-power .video__text__container .video__hero .buttons-tiktok {
   position: absolute;
@@ -2171,6 +2180,7 @@ a:hover {
   font-weight: 700;
   font-size: 20px;
   margin: 50px 0;
+  padding: 10px 3px;
 }
 .womens-power .video__text__container .link__container a {
   display: -webkit-box;
@@ -2214,7 +2224,7 @@ a:hover {
   max-width: 1920px;
 }
 .womens-power .content__block--align .left__block {
-  background: url(../images/example/colored-pencils-in-a-circle-isolated-on-a-white-background-or.jpg) no-repeat center center/cover;
+  background: url(../images/example/pencils-in-a-circle.jpg) no-repeat center center/cover;
   width: 100%;
   height: 512px;
   aspect-ratio: 1/1;
@@ -2247,7 +2257,7 @@ a:hover {
   z-index: 0;
 }
 .womens-power .content__block--align .right__block {
-  background: url(../images/example/1.png) no-repeat center center/cover;
+  background: url(../images/example/women-power-index-research.jpg) no-repeat center center/cover;
   width: 100%;
   height: 512px;
   aspect-ratio: 1/1;
@@ -2289,7 +2299,7 @@ a:hover {
   margin: 0 4vw;
   z-index: 10;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1050px) {
   .womens-power .container__title__link {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2299,6 +2309,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 30px;
   }
 }
 .womens-power .container__title__link .title__criteria,
@@ -2308,10 +2319,10 @@ a:hover {
   margin-right: 20px;
   font-weight: 700;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1050px) {
   .womens-power .container__title__link .title__criteria,
 .womens-power .container__title__link .title__research {
-    margin: 0 0 20px 0;
+    margin-right: 0;
   }
 }
 .womens-power .container #image-womens-power {
@@ -2327,6 +2338,16 @@ a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .womens-power .container #time-line {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .womens-power .container #time-line .container__title__link {
   -webkit-box-orient: vertical;
@@ -2341,6 +2362,7 @@ a:hover {
 .womens-power .container #time-line .container__title__link .title__gender {
   color: #fafafa;
   background: #191919;
+  padding: 1vw 1.5vw;
 }
 .womens-power .container #time-line .button--yellow {
   width: 240px;
@@ -2386,6 +2408,23 @@ a:hover {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+    font-size: 3.9vw;
+    font-family: "Arial", sans-serif;
+    line-height: 1.1;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 1050px) {
+  .womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+    font-size: 3.9vw;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  .womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
+    font-size: 20px;
+  }
+}
 .womens-power .container .center__block {
   width: 100%;
   height: 512px;
@@ -2400,6 +2439,13 @@ a:hover {
           justify-content: flex-end;
   position: relative;
   margin-top: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .womens-power .container .center__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .womens-power .container .center__block::before {
   content: "";

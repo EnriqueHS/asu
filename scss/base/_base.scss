@@ -409,11 +409,13 @@ main {
 //container block text
 .text__format {
   width: 100%;
+  border: 2px solid red
 }
 
 .uppertitle {
   @include h5 ();
   margin-bottom: 30px;
+  padding: 10px 5px;
 
   @include responsive ('tablet-h') {
     @include h3 ();
