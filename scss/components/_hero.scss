@@ -17,15 +17,24 @@
 
 		.title {
 			@include h1();
-			padding: 1vw 1.5vw;
 			font-weight: 700;
+			z-index: 5;		
+		}
+
+		.text__background {
+			//padding: 1vw 1.5vw;
+			font-weight: 700;
+			background: $black;
 			color: $white;
-			background-color: $black;
-			z-index: 5;
+			box-shadow: -0.5em 0 0 $black, 0.5em 0 0 $black;
+			padding: 1vw 0;
+			line-height: 1.4;
+			border-radius: 3px; 
 
 			&--secondary {
-				color: $black;
-				background-color: $yellow;
+				background: $yellow;
+				box-shadow: -0.5em 0 0 $yellow, 0.5em 0 0 $yellow;
+				color: $black;				
 			}
 		}
 	}

@@ -107,13 +107,13 @@ strong * {
   padding: 0 6vw;
 
   @include responsive('tablet-h') {
-    padding: 0 64px;
-  }
-  @include responsive('mobile-v') {
     padding: 0 32px;
   }
-  @include responsive('mobile-s') {
+  @include responsive('mobile-v') {
     padding: 0 16px;
+  }
+  @include responsive('mobile-s') {
+    padding: 0 10px;
   }
 }
 
@@ -409,13 +409,19 @@ main {
 //container block text
 .text__format {
   width: 100%;
-  border: 2px solid red
+  margin: 30px 0 80px 0;
+
+  @include responsive ('mobile-v') {
+    margin: 15px 0 30px 0;
+  }
 }
 
 .uppertitle {
   @include h5 ();
   margin-bottom: 30px;
-  padding: 10px 5px;
+  padding: 8px 5px;
+  border-radius: 2px;
+  font-size: 1.5rem;
 
   @include responsive ('tablet-h') {
     @include h3 ();
@@ -423,16 +429,12 @@ main {
   }
 
   &--black {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
     letter-spacing: -.0525rem;
     background: $primary-color;
     color: $light-white;
   }
 
   &--yellow { 
-    font-size: 1.5rem;
-    line-height: 1.75rem;
     letter-spacing: -.0525rem;
     background: $yellow;
     color: $primary-color;
