@@ -8,7 +8,11 @@
   width: 17px;
   height: 55px;
   cursor: pointer;
-  z-index: 50;
+  z-index: 110;
+
+  @include responsive ('tablet-h') {
+    bottom: auto;
+  }
 }
 
 .bar,
