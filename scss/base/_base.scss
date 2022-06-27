@@ -110,10 +110,10 @@ strong * {
     padding: 0 32px;
   }
   @include responsive('mobile-v') {
-    padding: 0 16px;
+    padding: 0 20px;
   }
   @include responsive('mobile-s') {
-    padding: 0 10px;
+    padding: 0 16px;
   }
 }
 
@@ -440,3 +440,15 @@ main {
     color: $primary-color;
   }
 }
+
+.uppertitle__bold__sm {
+  font-size: 24px;
+  padding-top: 35px;
+
+  @include responsive ('tablet-h') {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+}
+
+

@@ -2,9 +2,11 @@
 .content__block__grid {
   display: grid;
   grid-template-columns: 70% 1fr;
+  column-gap: 30px;
 
   @include responsive ('tablet-h') {
     grid-template-columns: 100%;
+    row-gap: 30px;
   }
 
   .right__content {

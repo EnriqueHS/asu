@@ -210,7 +210,7 @@
   user-select: none;
   border: 1px solid $third-color;
   line-height: 1;
-  border-radius: 5vw;
+  border-radius: 10vw;
   transition: all 0.03s ease-in-out 0s;
   font-size: 0.875rem;
   background-color: $third-color;
@@ -246,7 +246,7 @@
     
     font-size: 16px;
     line-height: 1;
-    border-radius: 5vw;
+    border-radius: 10vw;
     padding: 15px 30px;
 
     &:hover {

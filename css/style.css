@@ -81,7 +81,7 @@ h1, .h1, .h1 p {
 }
 @media only screen and (max-width: 600px) {
   h1, .h1, .h1 p {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -97,7 +97,7 @@ h2, .h2, .h2 p {
 }
 @media only screen and (max-width: 600px) {
   h2, .h2, .h2 p {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 
@@ -113,7 +113,7 @@ h3, .h3, .h3 p {
 }
 @media only screen and (max-width: 600px) {
   h3, .h3, .h3 p {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
@@ -209,12 +209,12 @@ strong * {
 }
 @media only screen and (max-width: 600px) {
   .container-sm, .hero--content {
-    padding: 0 16px;
+    padding: 0 20px;
   }
 }
 @media only screen and (max-width: 400px) {
   .container-sm, .hero--content {
-    padding: 0 10px;
+    padding: 0 16px;
   }
 }
 
@@ -596,7 +596,7 @@ main {
 }
 @media only screen and (max-width: 1050px) and (max-width: 600px) {
   .uppertitle {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 .uppertitle--black {
@@ -608,6 +608,17 @@ main {
   letter-spacing: -0.0525rem;
   background: #ffc627;
   color: #191919;
+}
+
+.uppertitle__bold__sm {
+  font-size: 24px;
+  padding-top: 35px;
+}
+@media only screen and (max-width: 1050px) {
+  .uppertitle__bold__sm {
+    padding-top: 20px;
+    font-size: 20px;
+  }
 }
 
 .button {
@@ -622,7 +633,7 @@ main {
           user-select: none;
   border: 1px solid #8C1D40;
   line-height: 1;
-  border-radius: 5vw;
+  border-radius: 10vw;
   -webkit-transition: all 0.03s ease-in-out 0s;
   transition: all 0.03s ease-in-out 0s;
   font-size: 0.875rem;
@@ -661,7 +672,7 @@ main {
   background-color: #8C1D40;
   font-size: 16px;
   line-height: 1;
-  border-radius: 5vw;
+  border-radius: 10vw;
   padding: 15px 30px;
 }
 .button--red:hover {
@@ -741,7 +752,7 @@ main {
 }
 @media only screen and (max-width: 600px) {
   .hero--content .title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 .hero--content .text__background {
@@ -835,13 +846,17 @@ main {
 .content__block__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 1fr;
+  -ms-grid-columns: 70% 30px 1fr;
   grid-template-columns: 70% 1fr;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 @media only screen and (max-width: 1050px) {
   .content__block__grid {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
+    row-gap: 30px;
   }
 }
 .content__block__grid .right__content {
@@ -1817,7 +1832,7 @@ main {
 }
 @media only screen and (max-width: 600px) {
   .image_slider__title {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 .image_slider__caption {
@@ -1956,7 +1971,7 @@ h1 {
 }
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -1973,7 +1988,7 @@ h2 {
 }
 @media only screen and (max-width: 600px) {
   h2 {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 
@@ -1990,7 +2005,7 @@ h3 {
 }
 @media only screen and (max-width: 600px) {
   h3 {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
@@ -2584,7 +2599,7 @@ a:hover {
 }
 @media only screen and (max-width: 600px) and (max-width: 600px) {
   .womens-power .container #ruth-bader .ruth-bader__text .ruth-bader__title {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 .womens-power .container .center__block {
@@ -2660,18 +2675,18 @@ a:hover {
   }
 }
 .supercharger .center__block .middle__block .title__middle {
-  font-size: 2.6vw;
+  font-size: 3.13vw;
   font-family: "Arial", sans-serif;
   line-height: 1.1;
 }
 @media only screen and (max-width: 1050px) {
   .supercharger .center__block .middle__block .title__middle {
-    font-size: 2.6vw;
+    font-size: 3.13vw;
   }
 }
 @media only screen and (max-width: 600px) {
   .supercharger .center__block .middle__block .title__middle {
-    font-size: 16px;
+    font-size: 26px;
   }
 }
 .supercharger .center__block .middle__block a {
@@ -3062,7 +3077,7 @@ a:hover {
 }
 @media only screen and (max-width: 600px) {
   .news-and-events-single .title__news__events__single {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
