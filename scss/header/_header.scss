@@ -380,11 +380,9 @@
 
 					.menu__sub {
 						position: absolute;
-						top: 2vw;
+						top: 100%;
 						left: 0;
 						display: flex;
-						-webkit-box-pack: justify;
-						justify-content: space-between;
 						background: rgb(255, 255, 255);
 						border: 1px solid rgb(208, 208, 208);
 						opacity: 1;
@@ -394,13 +392,8 @@
 						transition: all 0.5s cubic-bezier(0.19, 1, 0.19, 1) 0s;
 						overflow: hidden;
 						padding: 2rem;
-						display: flex;
-						margin: 0px auto;
-						-webkit-box-pack: center;
-						justify-content: center;
 						min-width: 18rem;
 						//margin: 0.3px 0px 0px;
-
 						@include responsive ('tablet-h') {
 							width: 100%;
 						}
